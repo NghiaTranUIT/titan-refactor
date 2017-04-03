@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		BA8756171E923BCF00FCDFB1 /* TitanCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8756151E923BCF00FCDFB1 /* TitanCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA8756C31E929F7800FCDFB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756C21E929F7800FCDFB1 /* Alamofire.framework */; };
+		BA8756CC1E92A10400FCDFB1 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756C41E92A10400FCDFB1 /* Bond.framework */; };
+		BA8756CD1E92A10400FCDFB1 /* Diff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756C51E92A10400FCDFB1 /* Diff.framework */; };
+		BA8756CE1E92A10400FCDFB1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756C61E92A10400FCDFB1 /* ObjectMapper.framework */; };
+		BA8756CF1E92A10400FCDFB1 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756C71E92A10400FCDFB1 /* ReactiveKit.framework */; };
+		BA8756D01E92A10400FCDFB1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756C81E92A10400FCDFB1 /* Realm.framework */; };
+		BA8756D11E92A10400FCDFB1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756C91E92A10400FCDFB1 /* RealmSwift.framework */; };
+		BA8756D21E92A10400FCDFB1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756CA1E92A10400FCDFB1 /* SnapKit.framework */; };
+		BA8756D31E92A10400FCDFB1 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756CB1E92A10400FCDFB1 /* SwiftyBeaver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA8756121E923BCF00FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756151E923BCF00FCDFB1 /* TitanCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitanCore.h; sourceTree = "<group>"; };
 		BA8756161E923BCF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA8756C21E929F7800FCDFB1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		BA8756C41E92A10400FCDFB1 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = ../Carthage/Build/Mac/Bond.framework; sourceTree = "<group>"; };
+		BA8756C51E92A10400FCDFB1 /* Diff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Diff.framework; path = ../Carthage/Build/Mac/Diff.framework; sourceTree = "<group>"; };
+		BA8756C61E92A10400FCDFB1 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
+		BA8756C71E92A10400FCDFB1 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = ../Carthage/Build/Mac/ReactiveKit.framework; sourceTree = "<group>"; };
+		BA8756C81E92A10400FCDFB1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
+		BA8756C91E92A10400FCDFB1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		BA8756CA1E92A10400FCDFB1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/Mac/SnapKit.framework; sourceTree = "<group>"; };
+		BA8756CB1E92A10400FCDFB1 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = ../Carthage/Build/Mac/SwiftyBeaver.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +39,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8756C31E929F7800FCDFB1 /* Alamofire.framework in Frameworks */,
+				BA8756CC1E92A10400FCDFB1 /* Bond.framework in Frameworks */,
+				BA8756CD1E92A10400FCDFB1 /* Diff.framework in Frameworks */,
+				BA8756CE1E92A10400FCDFB1 /* ObjectMapper.framework in Frameworks */,
+				BA8756CF1E92A10400FCDFB1 /* ReactiveKit.framework in Frameworks */,
+				BA8756D01E92A10400FCDFB1 /* Realm.framework in Frameworks */,
+				BA8756D11E92A10400FCDFB1 /* RealmSwift.framework in Frameworks */,
+				BA8756D21E92A10400FCDFB1 /* SnapKit.framework in Frameworks */,
+				BA8756D31E92A10400FCDFB1 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +59,7 @@
 			children = (
 				BA8756141E923BCF00FCDFB1 /* TitanCore */,
 				BA8756131E923BCF00FCDFB1 /* Products */,
+				BA8756921E9255ED00FCDFB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +74,74 @@
 		BA8756141E923BCF00FCDFB1 /* TitanCore */ = {
 			isa = PBXGroup;
 			children = (
+				BA87567B1E924DAC00FCDFB1 /* Configuration */,
+				BA87566E1E924D0A00FCDFB1 /* Source Code */,
+			);
+			path = TitanCore;
+			sourceTree = "<group>";
+		};
+		BA87566E1E924D0A00FCDFB1 /* Source Code */ = {
+			isa = PBXGroup;
+			children = (
+				BA87567C1E924DD000FCDFB1 /* Constants */,
+				BA87567A1E924DA600FCDFB1 /* Model */,
+				BA87567D1E924E0700FCDFB1 /* View model */,
+			);
+			name = "Source Code";
+			sourceTree = "<group>";
+		};
+		BA87567A1E924DA600FCDFB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA87567E1E924E1100FCDFB1 /* Objects */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BA87567B1E924DAC00FCDFB1 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
 				BA8756151E923BCF00FCDFB1 /* TitanCore.h */,
 				BA8756161E923BCF00FCDFB1 /* Info.plist */,
 			);
-			path = TitanCore;
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		BA87567C1E924DD000FCDFB1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		BA87567D1E924E0700FCDFB1 /* View model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View model";
+			sourceTree = "<group>";
+		};
+		BA87567E1E924E1100FCDFB1 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		BA8756921E9255ED00FCDFB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA8756C41E92A10400FCDFB1 /* Bond.framework */,
+				BA8756C51E92A10400FCDFB1 /* Diff.framework */,
+				BA8756C61E92A10400FCDFB1 /* ObjectMapper.framework */,
+				BA8756C71E92A10400FCDFB1 /* ReactiveKit.framework */,
+				BA8756C81E92A10400FCDFB1 /* Realm.framework */,
+				BA8756C91E92A10400FCDFB1 /* RealmSwift.framework */,
+				BA8756CA1E92A10400FCDFB1 /* SnapKit.framework */,
+				BA8756CB1E92A10400FCDFB1 /* SwiftyBeaver.framework */,
+				BA8756C21E929F7800FCDFB1 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +166,7 @@
 				BA87560E1E923BCF00FCDFB1 /* Frameworks */,
 				BA87560F1E923BCF00FCDFB1 /* Headers */,
 				BA8756101E923BCF00FCDFB1 /* Resources */,
+				BA8756B11E929ED000FCDFB1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,6 +219,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA8756B11E929ED000FCDFB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/Mac/Alamofire.framework",
+				"$(SRCROOT)/../Carthage/Build/Mac/Bond.framework",
+				"$(SRCROOT)/../Carthage/Build/Mac/Diff.framework",
+				"$(SRCROOT)/../Carthage/Build/Mac/ObjectMapper.framework",
+				"$(SRCROOT)/../Carthage/Build/Mac/ReactiveKit.framework",
+				"$(SRCROOT)/../Carthage/Build/Mac/Realm.framework",
+				"$(SRCROOT)/../Carthage/Build/Mac/RealmSwift.framework",
+				"$(SRCROOT)/../Carthage/Build/Mac/SnapKit.framework",
+				"$(SRCROOT)/../Carthage/Build/Mac/SwiftyBeaver.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA87560D1E923BCF00FCDFB1 /* Sources */ = {
@@ -244,6 +362,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../Carthage/Build/Mac/**",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = TitanCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -265,6 +387,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../Carthage/Build/Mac/**",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = TitanCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -295,6 +421,7 @@
 				BA87561C1E923BCF00FCDFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

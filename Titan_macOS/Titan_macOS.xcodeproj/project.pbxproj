@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BA87562A1E923BEF00FCDFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */; };
-		BA87562C1E923BEF00FCDFB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87562B1E923BEF00FCDFB1 /* ViewController.swift */; };
 		BA87562E1E923BEF00FCDFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */; };
 		BA8756311E923BEF00FCDFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA87562F1E923BEF00FCDFB1 /* Main.storyboard */; };
 		BA8756681E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */; };
@@ -35,7 +34,6 @@
 /* Begin PBXFileReference section */
 		BA8756261E923BEF00FCDFB1 /* Titan_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titan_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA87562B1E923BEF00FCDFB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA8756301E923BEF00FCDFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA8756321E923BEF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,11 +74,10 @@
 		BA8756281E923BEF00FCDFB1 /* Titan_macOS */ = {
 			isa = PBXGroup;
 			children = (
-				BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */,
-				BA87562B1E923BEF00FCDFB1 /* ViewController.swift */,
-				BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */,
-				BA87562F1E923BEF00FCDFB1 /* Main.storyboard */,
-				BA8756321E923BEF00FCDFB1 /* Info.plist */,
+				BA8756771E924D7600FCDFB1 /* Constants */,
+				BA8756741E924D3C00FCDFB1 /* App Delegate */,
+				BA8756731E924D3400FCDFB1 /* Resource */,
+				BA87566F1E924D2300FCDFB1 /* Source Code */,
 			);
 			path = Titan_macOS;
 			sourceTree = "<group>";
@@ -92,6 +89,94 @@
 				BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA87566F1E924D2300FCDFB1 /* Source Code */ = {
+			isa = PBXGroup;
+			children = (
+				BA8756721E924D3000FCDFB1 /* Model */,
+				BA8756711E924D2D00FCDFB1 /* View */,
+				BA8756701E924D2800FCDFB1 /* Controller */,
+			);
+			name = "Source Code";
+			sourceTree = "<group>";
+		};
+		BA8756701E924D2800FCDFB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA8756791E924D9400FCDFB1 /* Database */,
+				BA8756781E924D8300FCDFB1 /* Connection */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BA8756711E924D2D00FCDFB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BA8756721E924D3000FCDFB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BA8756731E924D3400FCDFB1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BA8756761E924D6B00FCDFB1 /* Assets */,
+				BA8756751E924D4600FCDFB1 /* Xib */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		BA8756741E924D3C00FCDFB1 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		BA8756751E924D4600FCDFB1 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				BA87562F1E923BEF00FCDFB1 /* Main.storyboard */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		BA8756761E924D6B00FCDFB1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		BA8756771E924D7600FCDFB1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BA8756321E923BEF00FCDFB1 /* Info.plist */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		BA8756781E924D8300FCDFB1 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		BA8756791E924D9400FCDFB1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA87562C1E923BEF00FCDFB1 /* ViewController.swift in Sources */,
 				BA87562A1E923BEF00FCDFB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
