@@ -11,8 +11,26 @@
 		BA87562C1E923BEF00FCDFB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87562B1E923BEF00FCDFB1 /* ViewController.swift */; };
 		BA87562E1E923BEF00FCDFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */; };
 		BA8756311E923BEF00FCDFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA87562F1E923BEF00FCDFB1 /* Main.storyboard */; };
-		BA87563A1E923C0500FCDFB1 /* TitanCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756391E923C0500FCDFB1 /* TitanCore.framework */; };
+		BA8756681E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */; };
+		BA8756691E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA87566C1E924B8400FCDFB1 /* TitanCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA87566B1E924B8400FCDFB1 /* TitanCore.framework */; };
+		BA87566D1E924B8400FCDFB1 /* TitanCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA87566B1E924B8400FCDFB1 /* TitanCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA87566A1E924B6D00FCDFB1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BA87566D1E924B8400FCDFB1 /* TitanCore.framework in Embed Frameworks */,
+				BA8756691E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BA8756261E923BEF00FCDFB1 /* Titan_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titan_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,7 +39,8 @@
 		BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA8756301E923BEF00FCDFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA8756321E923BEF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA8756391E923C0500FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TitanCore.framework; path = ../TitanCore/build/Debug/TitanCore.framework; sourceTree = "<group>"; };
+		BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyPostgreSQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA87566B1E924B8400FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA87563A1E923C0500FCDFB1 /* TitanCore.framework in Frameworks */,
+				BA87566C1E924B8400FCDFB1 /* TitanCore.framework in Frameworks */,
+				BA8756681E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +88,8 @@
 		BA8756381E923C0500FCDFB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BA8756391E923C0500FCDFB1 /* TitanCore.framework */,
+				BA87566B1E924B8400FCDFB1 /* TitanCore.framework */,
+				BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,6 +104,7 @@
 				BA8756221E923BEF00FCDFB1 /* Sources */,
 				BA8756231E923BEF00FCDFB1 /* Frameworks */,
 				BA8756241E923BEF00FCDFB1 /* Resources */,
+				BA87566A1E924B6D00FCDFB1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,6 +325,7 @@
 				BA8756371E923BEF00FCDFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
