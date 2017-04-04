@@ -52,6 +52,15 @@ Podfile.lock
 Carthage/Checkouts
 Carthage/Build
 
+TitanCore/Carthage/Checkouts
+TitanCore/Carthage/Build
+
+Titan_macOS/Carthage/Checkouts
+Titan_macOS/Carthage/Build
+
+Swifty-PostgreSQL/Carthage/Checkouts
+Swifty-PostgreSQL/Carthage/Build
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
