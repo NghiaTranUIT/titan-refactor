@@ -1,5 +1,5 @@
 //
-//  BaseViewModel.swift
+//  BaseTableViewDataSource.swift
 //  TitanCore
 //
 //  Created by Nghia Tran on 4/4/17.
@@ -8,6 +8,6 @@
 
 import Cocoa
 
-class BaseViewModel: NSObject {
+class BaseTableViewDataSource: NSObject {
 
 }
