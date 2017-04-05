@@ -41,6 +41,8 @@
 		BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87572D1E934E1600FCDFB1 /* ApplicationManager.swift */; };
 		BA8757311E934E6700FCDFB1 /* AppVersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757301E934E6700FCDFB1 /* AppVersionManager.swift */; };
 		BA8757331E934E8600FCDFB1 /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */; };
+		BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757351E934FC100FCDFB1 /* FontManager.swift */; };
+		BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		BA87572D1E934E1600FCDFB1 /* ApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
 		BA8757301E934E6700FCDFB1 /* AppVersionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersionManager.swift; sourceTree = "<group>"; };
 		BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Keys.swift"; sourceTree = "<group>"; };
+		BA8757351E934FC100FCDFB1 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDataSourceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,7 @@
 		BA8756FA1E9345F900FCDFB1 /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
+				BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */,
 				BA8756FC1E93463000FCDFB1 /* BaseTableViewDataSource.swift */,
 			);
 			name = "Data Source";
@@ -267,6 +272,7 @@
 		BA8757241E934AC600FCDFB1 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				BA8757341E934FB900FCDFB1 /* Font */,
 				BA87572F1E934E5C00FCDFB1 /* App Version */,
 				BA87572C1E934E0800FCDFB1 /* Realm */,
 				BA87572B1E934E0400FCDFB1 /* Application  */,
@@ -297,6 +303,14 @@
 				BA8757301E934E6700FCDFB1 /* AppVersionManager.swift */,
 			);
 			name = "App Version";
+			sourceTree = "<group>";
+		};
+		BA8757341E934FB900FCDFB1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BA8757351E934FC100FCDFB1 /* FontManager.swift */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +436,7 @@
 				BA8757311E934E6700FCDFB1 /* AppVersionManager.swift in Sources */,
 				BA87570C1E9347C500FCDFB1 /* SlackReporter.swift in Sources */,
 				BA8756FD1E93463000FCDFB1 /* BaseTableViewDataSource.swift in Sources */,
+				BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */,
 				BA8757071E93477500FCDFB1 /* BaseModel+Mapping.swift in Sources */,
 				BA8757331E934E8600FCDFB1 /* UserDefaults+Keys.swift in Sources */,
 				BA87571D1E93489700FCDFB1 /* GroupConnectionObj.swift in Sources */,
@@ -429,6 +444,7 @@
 				BA87570E1E93481000FCDFB1 /* UUID+Helper.swift in Sources */,
 				BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */,
 				BA8757041E93474400FCDFB1 /* Constants.swift in Sources */,
+				BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */,
 				BA8757281E934AF700FCDFB1 /* RealmKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

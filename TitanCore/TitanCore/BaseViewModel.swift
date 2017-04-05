@@ -8,6 +8,6 @@
 
 import Cocoa
 
-class BaseViewModel: NSObject {
-
+class BaseViewModel {
+    
 }
