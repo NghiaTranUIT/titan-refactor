@@ -44,6 +44,10 @@
 		BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757351E934FC100FCDFB1 /* FontManager.swift */; };
 		BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */; };
 		BADDF71F1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADDF71E1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework */; };
+		BADDF72A1E94F2CA00F35FF3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7291E94F2CA00F35FF3 /* BaseViewController.swift */; };
+		BADDF72C1E94F2DB00F35FF3 /* BaseSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF72B1E94F2DB00F35FF3 /* BaseSplitViewController.swift */; };
+		BADDF7311E94F35500F35FF3 /* ConnectionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7301E94F35500F35FF3 /* ConnectionListViewModel.swift */; };
+		BADDF7331E94F36700F35FF3 /* ConnectionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7321E94F36700F35FF3 /* ConnectionDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +99,10 @@
 		BA8757351E934FC100FCDFB1 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDataSourceProtocol.swift; sourceTree = "<group>"; };
 		BADDF71E1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyPostgreSQL.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Titan-workspace-giunqhvetblyasacegghgnxmxrmd/Build/Products/Debug/SwiftyPostgreSQL.framework"; sourceTree = "<group>"; };
+		BADDF7291E94F2CA00F35FF3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BADDF72B1E94F2DB00F35FF3 /* BaseSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSplitViewController.swift; sourceTree = "<group>"; };
+		BADDF7301E94F35500F35FF3 /* ConnectionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionListViewModel.swift; sourceTree = "<group>"; };
+		BADDF7321E94F36700F35FF3 /* ConnectionDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +156,7 @@
 		BA87566E1E924D0A00FCDFB1 /* Source Code */ = {
 			isa = PBXGroup;
 			children = (
+				BADDF7281E94F2BE00F35FF3 /* Base */,
 				BA8757051E93474F00FCDFB1 /* Extension */,
 				BA87567C1E924DD000FCDFB1 /* Constants */,
 				BA8757241E934AC600FCDFB1 /* Manager */,
@@ -161,8 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				BA8757081E9347B000FCDFB1 /* Logger */,
-				BA8756FB1E93460A00FCDFB1 /* View model */,
-				BA8756FA1E9345F900FCDFB1 /* Data Source */,
 				BA87567E1E924E1100FCDFB1 /* Objects */,
 			);
 			name = Model;
@@ -188,6 +195,8 @@
 		BA87567D1E924E0700FCDFB1 /* View model */ = {
 			isa = PBXGroup;
 			children = (
+				BADDF7301E94F35500F35FF3 /* ConnectionListViewModel.swift */,
+				BADDF7321E94F36700F35FF3 /* ConnectionDetailViewModel.swift */,
 			);
 			name = "View model";
 			sourceTree = "<group>";
@@ -244,14 +253,6 @@
 				BA8756FC1E93463000FCDFB1 /* BaseTableViewDataSource.swift */,
 			);
 			name = "Data Source";
-			sourceTree = "<group>";
-		};
-		BA8756FB1E93460A00FCDFB1 /* View model */ = {
-			isa = PBXGroup;
-			children = (
-				BA8756FE1E93464F00FCDFB1 /* BaseViewModel.swift */,
-			);
-			name = "View model";
 			sourceTree = "<group>";
 		};
 		BA8757051E93474F00FCDFB1 /* Extension */ = {
@@ -315,6 +316,33 @@
 				BA8757351E934FC100FCDFB1 /* FontManager.swift */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		BADDF7281E94F2BE00F35FF3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF72F1E94F33300F35FF3 /* Controller */,
+				BADDF72E1E94F32F00F35FF3 /* View Model */,
+				BA8756FA1E9345F900FCDFB1 /* Data Source */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BADDF72E1E94F32F00F35FF3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA8756FE1E93464F00FCDFB1 /* BaseViewModel.swift */,
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
+		BADDF72F1E94F33300F35FF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF7291E94F2CA00F35FF3 /* BaseViewController.swift */,
+				BADDF72B1E94F2DB00F35FF3 /* BaseSplitViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADDF7331E94F36700F35FF3 /* ConnectionDetailViewModel.swift in Sources */,
 				BA8757201E93489700FCDFB1 /* SSHObj.swift in Sources */,
 				BA8757101E93483200FCDFB1 /* UserObj.swift in Sources */,
 				BA87571C1E93489700FCDFB1 /* GroupColorObj.swift in Sources */,
@@ -438,6 +467,8 @@
 				BA87570A1E9347BE00FCDFB1 /* Logger.swift in Sources */,
 				BA8757261E934AD400FCDFB1 /* RealmManager.swift in Sources */,
 				BA8757311E934E6700FCDFB1 /* AppVersionManager.swift in Sources */,
+				BADDF72C1E94F2DB00F35FF3 /* BaseSplitViewController.swift in Sources */,
+				BADDF72A1E94F2CA00F35FF3 /* BaseViewController.swift in Sources */,
 				BA87570C1E9347C500FCDFB1 /* SlackReporter.swift in Sources */,
 				BA8756FD1E93463000FCDFB1 /* BaseTableViewDataSource.swift in Sources */,
 				BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */,
@@ -447,6 +478,7 @@
 				BA8756FF1E93464F00FCDFB1 /* BaseViewModel.swift in Sources */,
 				BA87570E1E93481000FCDFB1 /* UUID+Helper.swift in Sources */,
 				BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */,
+				BADDF7311E94F35500F35FF3 /* ConnectionListViewModel.swift in Sources */,
 				BA8757041E93474400FCDFB1 /* Constants.swift in Sources */,
 				BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */,
 				BA8757281E934AF700FCDFB1 /* RealmKeys.swift in Sources */,

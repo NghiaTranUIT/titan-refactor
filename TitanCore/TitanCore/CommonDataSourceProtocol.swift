@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol CommonDataSourceProtocol: class {
+public protocol CommonDataSourceProtocol: class {
     
     // REQUIRED
     // Number of item

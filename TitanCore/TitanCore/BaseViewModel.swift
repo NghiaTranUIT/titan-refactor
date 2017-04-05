@@ -8,6 +8,11 @@
 
 import Cocoa
 
-class BaseViewModel {
+open class BaseViewModel {
     
+    //
+    // MARK: - Init
+    public init() {
+        
+    }
 }

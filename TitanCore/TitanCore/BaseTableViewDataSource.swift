@@ -8,16 +8,16 @@
 
 import Cocoa
 
-class BaseTableViewDataSource: NSObject {
+open class BaseTableViewDataSource: NSObject {
 
     //
     // MARK: - Variable
-    weak var delegate: CommonDataSourceProtocol?
+    public weak var delegate: CommonDataSourceProtocol?
     fileprivate var tableView: NSTableView!
     
     //
     // MARK: - Initialization
-    init(with tableView: NSTableView) {
+    public init(tableView: NSTableView) {
         super.init()
         
         self.tableView = tableView
@@ -39,7 +39,7 @@ extension BaseTableViewDataSource {
 // MARK: - Table View
 extension BaseTableViewDataSource: NSTableViewDataSource {
     
-    func numberOfRows(in tableView: NSTableView) -> Int {
+    public func numberOfRows(in tableView: NSTableView) -> Int {
         guard let delegate = self.delegate else {
             return 0;
         }
@@ -52,7 +52,7 @@ extension BaseTableViewDataSource: NSTableViewDataSource {
 //
 // MARK: - Delegate TableView
 extension BaseTableViewDataSource: NSTableViewDelegate {
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+    public func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         guard let delegate = self.delegate else {
             return nil
         }
@@ -60,7 +60,7 @@ extension BaseTableViewDataSource: NSTableViewDelegate {
         return delegate.CommonDataSourceViewFor(tableColumn, row: row)
     }
     
-    func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
+    public func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
         guard let delegate = self.delegate else {
             return nil
         }
@@ -68,7 +68,7 @@ extension BaseTableViewDataSource: NSTableViewDelegate {
         return delegate.CommonDataSourceRowView(for: row)
     }
     
-    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+    public func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         guard let delegate = self.delegate else {
             return 44.0
         }
