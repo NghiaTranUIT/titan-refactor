@@ -100,7 +100,6 @@ extension RealmManager {
     fileprivate static var defaultRealm: Realm {
         do {
             //return try Realm(configuration: self.secrectRealmConfigure)
-            Logger.info("Realm = \(Realm.Configuration.defaultConfiguration.fileURL)")
             return try Realm()
         } catch let error as NSError {
             // If the encryption key is wrong, `error` will say that it's an invalid database

@@ -43,6 +43,7 @@
 		BA8757331E934E8600FCDFB1 /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */; };
 		BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757351E934FC100FCDFB1 /* FontManager.swift */; };
 		BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */; };
+		BADDF71F1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADDF71E1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Keys.swift"; sourceTree = "<group>"; };
 		BA8757351E934FC100FCDFB1 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDataSourceProtocol.swift; sourceTree = "<group>"; };
+		BADDF71E1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyPostgreSQL.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Titan-workspace-giunqhvetblyasacegghgnxmxrmd/Build/Products/Debug/SwiftyPostgreSQL.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADDF71F1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework in Frameworks */,
 				BA87572A1E934CEA00FCDFB1 /* PromiseKit.framework in Frameworks */,
 				BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */,
 				BA8756E71E933FCB00FCDFB1 /* Bond.framework in Frameworks */,
@@ -210,6 +213,7 @@
 		BA8756921E9255ED00FCDFB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BADDF71E1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework */,
 				BA8757291E934CEA00FCDFB1 /* PromiseKit.framework */,
 				BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */,
 				BA8756DE1E933FCB00FCDFB1 /* Bond.framework */,

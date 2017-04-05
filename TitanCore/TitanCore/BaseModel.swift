@@ -12,28 +12,29 @@ import Realm
 
 //
 // MARK: - BaseModel
-class BaseModel: Object {
+open class BaseModel: Object {
     
     //
     // MARK: - Variable
-    dynamic var objectId: String! = UUID.shortUUID()
+    dynamic var
+    objectId: String! = UUID.shortUUID()
     dynamic var createdAt: Date! = Date()
     dynamic var updatedAt: Date! = Date()
     
     /// Make objectId is primary key
     /// Obj must have primary key to support "Update" depend on primary key
     /// https://realm.io/docs/swift/latest/#updating-objects
-    override static func primaryKey() -> String? {
+    override open static func primaryKey() -> String? {
         return Constants.Obj.ObjectId
     }
     
     //
     // MARK: - Mapping
-    class func objectForMapping(map: Map) -> BaseMappable? {
+    public class func objectForMapping(map: Map) -> BaseMappable? {
         return BaseModel()
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         self.objectId <- map[Constants.Obj.ObjectId]
         self.createdAt <- (map[Constants.Obj.CreatedAt], APIDateTransform())
         self.updatedAt <- (map[Constants.Obj.UpdatedAt], APIDateTransform())
