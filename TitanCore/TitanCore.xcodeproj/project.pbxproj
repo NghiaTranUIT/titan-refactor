@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BA8756171E923BCF00FCDFB1 /* TitanCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8756151E923BCF00FCDFB1 /* TitanCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA8756D81E92AFD600FCDFB1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8756D71E92AFD600FCDFB1 /* BaseViewModel.swift */; };
 		BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */; };
 		BA8756E71E933FCB00FCDFB1 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DE1E933FCB00FCDFB1 /* Bond.framework */; };
 		BA8756E81E933FCB00FCDFB1 /* Diff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DF1E933FCB00FCDFB1 /* Diff.framework */; };
@@ -18,7 +17,32 @@
 		BA8756EC1E933FCB00FCDFB1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E31E933FCB00FCDFB1 /* RealmSwift.framework */; };
 		BA8756ED1E933FCB00FCDFB1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E41E933FCB00FCDFB1 /* SnapKit.framework */; };
 		BA8756EE1E933FCB00FCDFB1 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E51E933FCB00FCDFB1 /* SwiftyBeaver.framework */; };
-		BAF764181E94A1B2001A6545 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF764171E94A1B2001A6545 /* SwiftyPostgreSQL.framework */; };
+		BA8756FD1E93463000FCDFB1 /* BaseTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8756FC1E93463000FCDFB1 /* BaseTableViewDataSource.swift */; };
+		BA8756FF1E93464F00FCDFB1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8756FE1E93464F00FCDFB1 /* BaseViewModel.swift */; };
+		BA8757021E93471E00FCDFB1 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757011E93471E00FCDFB1 /* BaseModel.swift */; };
+		BA8757041E93474400FCDFB1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757031E93474400FCDFB1 /* Constants.swift */; };
+		BA8757071E93477500FCDFB1 /* BaseModel+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757061E93477500FCDFB1 /* BaseModel+Mapping.swift */; };
+		BA87570A1E9347BE00FCDFB1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757091E9347BE00FCDFB1 /* Logger.swift */; };
+		BA87570C1E9347C500FCDFB1 /* SlackReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87570B1E9347C500FCDFB1 /* SlackReporter.swift */; };
+		BA87570E1E93481000FCDFB1 /* UUID+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87570D1E93481000FCDFB1 /* UUID+Helper.swift */; };
+		BA8757101E93483200FCDFB1 /* UserObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87570F1E93483200FCDFB1 /* UserObj.swift */; };
+		BA8757121E93484100FCDFB1 /* SettingObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757111E93484100FCDFB1 /* SettingObj.swift */; };
+		BA8757141E93485100FCDFB1 /* DatabaseObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757131E93485100FCDFB1 /* DatabaseObj.swift */; };
+		BA87571C1E93489700FCDFB1 /* GroupColorObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757151E93489700FCDFB1 /* GroupColorObj.swift */; };
+		BA87571D1E93489700FCDFB1 /* GroupConnectionObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757161E93489700FCDFB1 /* GroupConnectionObj.swift */; };
+		BA87571E1E93489700FCDFB1 /* InspiredQuotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757171E93489700FCDFB1 /* InspiredQuotation.swift */; };
+		BA87571F1E93489700FCDFB1 /* QueryObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757181E93489700FCDFB1 /* QueryObj.swift */; };
+		BA8757201E93489700FCDFB1 /* SSHObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757191E93489700FCDFB1 /* SSHObj.swift */; };
+		BA8757211E93489700FCDFB1 /* SSLObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87571A1E93489700FCDFB1 /* SSLObj.swift */; };
+		BA8757221E93489700FCDFB1 /* ThemeObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87571B1E93489700FCDFB1 /* ThemeObj.swift */; };
+		BA8757261E934AD400FCDFB1 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757251E934AD400FCDFB1 /* RealmManager.swift */; };
+		BA8757281E934AF700FCDFB1 /* RealmKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757271E934AF700FCDFB1 /* RealmKeys.swift */; };
+		BA87572A1E934CEA00FCDFB1 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8757291E934CEA00FCDFB1 /* PromiseKit.framework */; };
+		BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87572D1E934E1600FCDFB1 /* ApplicationManager.swift */; };
+		BA8757311E934E6700FCDFB1 /* AppVersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757301E934E6700FCDFB1 /* AppVersionManager.swift */; };
+		BA8757331E934E8600FCDFB1 /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */; };
+		BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757351E934FC100FCDFB1 /* FontManager.swift */; };
+		BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +58,6 @@
 		BA8756C91E92A10400FCDFB1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
 		BA8756CA1E92A10400FCDFB1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/Mac/SnapKit.framework; sourceTree = "<group>"; };
 		BA8756CB1E92A10400FCDFB1 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = ../Carthage/Build/Mac/SwiftyBeaver.framework; sourceTree = "<group>"; };
-		BA8756D71E92AFD600FCDFB1 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		BA8756DE1E933FCB00FCDFB1 /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/Mac/Bond.framework; sourceTree = "<group>"; };
 		BA8756DF1E933FCB00FCDFB1 /* Diff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Diff.framework; path = Carthage/Build/Mac/Diff.framework; sourceTree = "<group>"; };
@@ -44,7 +67,32 @@
 		BA8756E31E933FCB00FCDFB1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
 		BA8756E41E933FCB00FCDFB1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = "<group>"; };
 		BA8756E51E933FCB00FCDFB1 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/Mac/SwiftyBeaver.framework; sourceTree = "<group>"; };
-		BAF764171E94A1B2001A6545 /* SwiftyPostgreSQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyPostgreSQL.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Titan-workspace-giunqhvetblyasacegghgnxmxrmd/Build/Products/Debug/SwiftyPostgreSQL.framework"; sourceTree = "<group>"; };
+		BA8756FC1E93463000FCDFB1 /* BaseTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDataSource.swift; sourceTree = "<group>"; };
+		BA8756FE1E93464F00FCDFB1 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		BA8757011E93471E00FCDFB1 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		BA8757031E93474400FCDFB1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BA8757061E93477500FCDFB1 /* BaseModel+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseModel+Mapping.swift"; sourceTree = "<group>"; };
+		BA8757091E9347BE00FCDFB1 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BA87570B1E9347C500FCDFB1 /* SlackReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackReporter.swift; sourceTree = "<group>"; };
+		BA87570D1E93481000FCDFB1 /* UUID+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+Helper.swift"; sourceTree = "<group>"; };
+		BA87570F1E93483200FCDFB1 /* UserObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserObj.swift; sourceTree = "<group>"; };
+		BA8757111E93484100FCDFB1 /* SettingObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingObj.swift; sourceTree = "<group>"; };
+		BA8757131E93485100FCDFB1 /* DatabaseObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseObj.swift; sourceTree = "<group>"; };
+		BA8757151E93489700FCDFB1 /* GroupColorObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupColorObj.swift; sourceTree = "<group>"; };
+		BA8757161E93489700FCDFB1 /* GroupConnectionObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupConnectionObj.swift; sourceTree = "<group>"; };
+		BA8757171E93489700FCDFB1 /* InspiredQuotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspiredQuotation.swift; sourceTree = "<group>"; };
+		BA8757181E93489700FCDFB1 /* QueryObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryObj.swift; sourceTree = "<group>"; };
+		BA8757191E93489700FCDFB1 /* SSHObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSHObj.swift; sourceTree = "<group>"; };
+		BA87571A1E93489700FCDFB1 /* SSLObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLObj.swift; sourceTree = "<group>"; };
+		BA87571B1E93489700FCDFB1 /* ThemeObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeObj.swift; sourceTree = "<group>"; };
+		BA8757251E934AD400FCDFB1 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		BA8757271E934AF700FCDFB1 /* RealmKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmKeys.swift; sourceTree = "<group>"; };
+		BA8757291E934CEA00FCDFB1 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/Mac/PromiseKit.framework; sourceTree = "<group>"; };
+		BA87572D1E934E1600FCDFB1 /* ApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
+		BA8757301E934E6700FCDFB1 /* AppVersionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersionManager.swift; sourceTree = "<group>"; };
+		BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Keys.swift"; sourceTree = "<group>"; };
+		BA8757351E934FC100FCDFB1 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDataSourceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAF764181E94A1B2001A6545 /* SwiftyPostgreSQL.framework in Frameworks */,
+				BA87572A1E934CEA00FCDFB1 /* PromiseKit.framework in Frameworks */,
 				BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */,
 				BA8756E71E933FCB00FCDFB1 /* Bond.framework in Frameworks */,
 				BA8756E81E933FCB00FCDFB1 /* Diff.framework in Frameworks */,
@@ -97,7 +145,9 @@
 		BA87566E1E924D0A00FCDFB1 /* Source Code */ = {
 			isa = PBXGroup;
 			children = (
+				BA8757051E93474F00FCDFB1 /* Extension */,
 				BA87567C1E924DD000FCDFB1 /* Constants */,
+				BA8757241E934AC600FCDFB1 /* Manager */,
 				BA87567A1E924DA600FCDFB1 /* Model */,
 				BA87567D1E924E0700FCDFB1 /* View model */,
 			);
@@ -107,6 +157,9 @@
 		BA87567A1E924DA600FCDFB1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA8757081E9347B000FCDFB1 /* Logger */,
+				BA8756FB1E93460A00FCDFB1 /* View model */,
+				BA8756FA1E9345F900FCDFB1 /* Data Source */,
 				BA87567E1E924E1100FCDFB1 /* Objects */,
 			);
 			name = Model;
@@ -124,6 +177,7 @@
 		BA87567C1E924DD000FCDFB1 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				BA8757031E93474400FCDFB1 /* Constants.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -131,7 +185,6 @@
 		BA87567D1E924E0700FCDFB1 /* View model */ = {
 			isa = PBXGroup;
 			children = (
-				BA8756D71E92AFD600FCDFB1 /* BaseViewModel.swift */,
 			);
 			name = "View model";
 			sourceTree = "<group>";
@@ -139,6 +192,17 @@
 		BA87567E1E924E1100FCDFB1 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				BA8757011E93471E00FCDFB1 /* BaseModel.swift */,
+				BA87570F1E93483200FCDFB1 /* UserObj.swift */,
+				BA8757111E93484100FCDFB1 /* SettingObj.swift */,
+				BA8757131E93485100FCDFB1 /* DatabaseObj.swift */,
+				BA8757151E93489700FCDFB1 /* GroupColorObj.swift */,
+				BA8757161E93489700FCDFB1 /* GroupConnectionObj.swift */,
+				BA8757171E93489700FCDFB1 /* InspiredQuotation.swift */,
+				BA8757181E93489700FCDFB1 /* QueryObj.swift */,
+				BA8757191E93489700FCDFB1 /* SSHObj.swift */,
+				BA87571A1E93489700FCDFB1 /* SSLObj.swift */,
+				BA87571B1E93489700FCDFB1 /* ThemeObj.swift */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -146,7 +210,7 @@
 		BA8756921E9255ED00FCDFB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BAF764171E94A1B2001A6545 /* SwiftyPostgreSQL.framework */,
+				BA8757291E934CEA00FCDFB1 /* PromiseKit.framework */,
 				BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */,
 				BA8756DE1E933FCB00FCDFB1 /* Bond.framework */,
 				BA8756DF1E933FCB00FCDFB1 /* Diff.framework */,
@@ -167,6 +231,86 @@
 				BA8756C21E929F7800FCDFB1 /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA8756FA1E9345F900FCDFB1 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */,
+				BA8756FC1E93463000FCDFB1 /* BaseTableViewDataSource.swift */,
+			);
+			name = "Data Source";
+			sourceTree = "<group>";
+		};
+		BA8756FB1E93460A00FCDFB1 /* View model */ = {
+			isa = PBXGroup;
+			children = (
+				BA8756FE1E93464F00FCDFB1 /* BaseViewModel.swift */,
+			);
+			name = "View model";
+			sourceTree = "<group>";
+		};
+		BA8757051E93474F00FCDFB1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BA8757061E93477500FCDFB1 /* BaseModel+Mapping.swift */,
+				BA87570D1E93481000FCDFB1 /* UUID+Helper.swift */,
+				BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		BA8757081E9347B000FCDFB1 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				BA8757091E9347BE00FCDFB1 /* Logger.swift */,
+				BA87570B1E9347C500FCDFB1 /* SlackReporter.swift */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		BA8757241E934AC600FCDFB1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BA8757341E934FB900FCDFB1 /* Font */,
+				BA87572F1E934E5C00FCDFB1 /* App Version */,
+				BA87572C1E934E0800FCDFB1 /* Realm */,
+				BA87572B1E934E0400FCDFB1 /* Application  */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		BA87572B1E934E0400FCDFB1 /* Application  */ = {
+			isa = PBXGroup;
+			children = (
+				BA87572D1E934E1600FCDFB1 /* ApplicationManager.swift */,
+			);
+			name = "Application ";
+			sourceTree = "<group>";
+		};
+		BA87572C1E934E0800FCDFB1 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				BA8757251E934AD400FCDFB1 /* RealmManager.swift */,
+				BA8757271E934AF700FCDFB1 /* RealmKeys.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		BA87572F1E934E5C00FCDFB1 /* App Version */ = {
+			isa = PBXGroup;
+			children = (
+				BA8757301E934E6700FCDFB1 /* AppVersionManager.swift */,
+			);
+			name = "App Version";
+			sourceTree = "<group>";
+		};
+		BA8757341E934FB900FCDFB1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BA8757351E934FC100FCDFB1 /* FontManager.swift */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +406,7 @@
 				"$(SRCROOT)/Carthage/Build/Mac/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/PromiseKit.framework",
 			);
 			outputPaths = (
 			);
@@ -276,7 +421,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA8756D81E92AFD600FCDFB1 /* BaseViewModel.swift in Sources */,
+				BA8757201E93489700FCDFB1 /* SSHObj.swift in Sources */,
+				BA8757101E93483200FCDFB1 /* UserObj.swift in Sources */,
+				BA87571C1E93489700FCDFB1 /* GroupColorObj.swift in Sources */,
+				BA8757221E93489700FCDFB1 /* ThemeObj.swift in Sources */,
+				BA8757211E93489700FCDFB1 /* SSLObj.swift in Sources */,
+				BA87571E1E93489700FCDFB1 /* InspiredQuotation.swift in Sources */,
+				BA8757141E93485100FCDFB1 /* DatabaseObj.swift in Sources */,
+				BA8757021E93471E00FCDFB1 /* BaseModel.swift in Sources */,
+				BA8757121E93484100FCDFB1 /* SettingObj.swift in Sources */,
+				BA87571F1E93489700FCDFB1 /* QueryObj.swift in Sources */,
+				BA87570A1E9347BE00FCDFB1 /* Logger.swift in Sources */,
+				BA8757261E934AD400FCDFB1 /* RealmManager.swift in Sources */,
+				BA8757311E934E6700FCDFB1 /* AppVersionManager.swift in Sources */,
+				BA87570C1E9347C500FCDFB1 /* SlackReporter.swift in Sources */,
+				BA8756FD1E93463000FCDFB1 /* BaseTableViewDataSource.swift in Sources */,
+				BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */,
+				BA8757071E93477500FCDFB1 /* BaseModel+Mapping.swift in Sources */,
+				BA8757331E934E8600FCDFB1 /* UserDefaults+Keys.swift in Sources */,
+				BA87571D1E93489700FCDFB1 /* GroupConnectionObj.swift in Sources */,
+				BA8756FF1E93464F00FCDFB1 /* BaseViewModel.swift in Sources */,
+				BA87570E1E93481000FCDFB1 /* UUID+Helper.swift in Sources */,
+				BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */,
+				BA8757041E93474400FCDFB1 /* Constants.swift in Sources */,
+				BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */,
+				BA8757281E934AF700FCDFB1 /* RealmKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
