@@ -14,6 +14,7 @@
 		BA8756F41E93422600FCDFB1 /* TitanCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F31E93422600FCDFB1 /* TitanCore.framework */; };
 		BA8756F71E93442100FCDFB1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F51E93442100FCDFB1 /* Realm.framework */; };
 		BA8756F81E93442100FCDFB1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F61E93442100FCDFB1 /* RealmSwift.framework */; };
+		BAF764191E94A3B2001A6545 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF764191E94A3B2001A6545 /* SwiftyPostgreSQL.framework in Frameworks */,
 				BA8756F41E93422600FCDFB1 /* TitanCore.framework in Frameworks */,
 				BA8756F71E93442100FCDFB1 /* Realm.framework in Frameworks */,
 				BA8756F81E93442100FCDFB1 /* RealmSwift.framework in Frameworks */,
