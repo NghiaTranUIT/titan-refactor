@@ -18,6 +18,7 @@
 		BA8756EC1E933FCB00FCDFB1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E31E933FCB00FCDFB1 /* RealmSwift.framework */; };
 		BA8756ED1E933FCB00FCDFB1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E41E933FCB00FCDFB1 /* SnapKit.framework */; };
 		BA8756EE1E933FCB00FCDFB1 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E51E933FCB00FCDFB1 /* SwiftyBeaver.framework */; };
+		BAF764181E94A1B2001A6545 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF764171E94A1B2001A6545 /* SwiftyPostgreSQL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		BA8756E31E933FCB00FCDFB1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
 		BA8756E41E933FCB00FCDFB1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = "<group>"; };
 		BA8756E51E933FCB00FCDFB1 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/Mac/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		BAF764171E94A1B2001A6545 /* SwiftyPostgreSQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyPostgreSQL.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Titan-workspace-giunqhvetblyasacegghgnxmxrmd/Build/Products/Debug/SwiftyPostgreSQL.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF764181E94A1B2001A6545 /* SwiftyPostgreSQL.framework in Frameworks */,
 				BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */,
 				BA8756E71E933FCB00FCDFB1 /* Bond.framework in Frameworks */,
 				BA8756E81E933FCB00FCDFB1 /* Diff.framework in Frameworks */,
@@ -143,6 +146,7 @@
 		BA8756921E9255ED00FCDFB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAF764171E94A1B2001A6545 /* SwiftyPostgreSQL.framework */,
 				BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */,
 				BA8756DE1E933FCB00FCDFB1 /* Bond.framework */,
 				BA8756DF1E933FCB00FCDFB1 /* Diff.framework */,

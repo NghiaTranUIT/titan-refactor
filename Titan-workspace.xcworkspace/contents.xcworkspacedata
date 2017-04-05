@@ -5,9 +5,9 @@
       location = "group:Titan_macOS/Titan_macOS.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Swifty-PostgreSQL/Swifty-PostgreSQL.xcodeproj">
+      location = "group:TitanCore/TitanCore.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:TitanCore/TitanCore.xcodeproj">
+      location = "group:Swifty-PostgreSQL/Swifty-PostgreSQL.xcodeproj">
    </FileRef>
 </Workspace>

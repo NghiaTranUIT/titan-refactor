@@ -10,27 +10,11 @@
 		BA87562A1E923BEF00FCDFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */; };
 		BA87562E1E923BEF00FCDFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */; };
 		BA8756311E923BEF00FCDFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA87562F1E923BEF00FCDFB1 /* Main.storyboard */; };
-		BA8756681E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */; };
-		BA8756691E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BA8756DA1E92B13C00FCDFB1 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8756D91E92B13C00FCDFB1 /* ConnectionController.swift */; };
 		BA8756F41E93422600FCDFB1 /* TitanCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F31E93422600FCDFB1 /* TitanCore.framework */; };
 		BA8756F71E93442100FCDFB1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F51E93442100FCDFB1 /* Realm.framework */; };
 		BA8756F81E93442100FCDFB1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F61E93442100FCDFB1 /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		BA87566A1E924B6D00FCDFB1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				BA8756691E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BA8756261E923BEF00FCDFB1 /* Titan_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titan_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +36,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8756F41E93422600FCDFB1 /* TitanCore.framework in Frameworks */,
-				BA8756681E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework in Frameworks */,
 				BA8756F71E93442100FCDFB1 /* Realm.framework in Frameworks */,
 				BA8756F81E93442100FCDFB1 /* RealmSwift.framework in Frameworks */,
 			);
@@ -200,7 +183,6 @@
 				BA8756221E923BEF00FCDFB1 /* Sources */,
 				BA8756231E923BEF00FCDFB1 /* Frameworks */,
 				BA8756241E923BEF00FCDFB1 /* Resources */,
-				BA87566A1E924B6D00FCDFB1 /* Embed Frameworks */,
 				BA8756F91E93442700FCDFB1 /* ShellScript */,
 			);
 			buildRules = (
