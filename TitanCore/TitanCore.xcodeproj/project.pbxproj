@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802201E9C83E600096445 /* AppPreferences.swift */; };
+		BA1802231E9C843600096445 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802221E9C843600096445 /* Worker.swift */; };
+		BA1802251E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */; };
+		BA1802271E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802261E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift */; };
+		BA1802291E9C8A7900096445 /* CreateNewDatabaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802281E9C8A7900096445 /* CreateNewDatabaseWorker.swift */; };
+		BA18022B1E9C8C5800096445 /* SelectConnectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022A1E9C8C5800096445 /* SelectConnectionWorker.swift */; };
+		BA18022D1E9C8FF200096445 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022C1E9C8FF200096445 /* BaseWindowController.swift */; };
+		BA1802301E9C902B00096445 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022F1E9C902B00096445 /* NotificationManager.swift */; };
+		BA18023D1E9C94E400096445 /* DefaultQuotation.json in Resources */ = {isa = PBXBuildFile; fileRef = BA18023C1E9C94E400096445 /* DefaultQuotation.json */; };
 		BA8756171E923BCF00FCDFB1 /* TitanCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8756151E923BCF00FCDFB1 /* TitanCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */; };
-		BA8756E71E933FCB00FCDFB1 /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DE1E933FCB00FCDFB1 /* Bond.framework */; };
-		BA8756E81E933FCB00FCDFB1 /* Diff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DF1E933FCB00FCDFB1 /* Diff.framework */; };
 		BA8756E91E933FCB00FCDFB1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E01E933FCB00FCDFB1 /* ObjectMapper.framework */; };
-		BA8756EA1E933FCB00FCDFB1 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E11E933FCB00FCDFB1 /* ReactiveKit.framework */; };
 		BA8756EB1E933FCB00FCDFB1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E21E933FCB00FCDFB1 /* Realm.framework */; };
 		BA8756EC1E933FCB00FCDFB1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E31E933FCB00FCDFB1 /* RealmSwift.framework */; };
 		BA8756ED1E933FCB00FCDFB1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E41E933FCB00FCDFB1 /* SnapKit.framework */; };
@@ -37,16 +43,37 @@
 		BA8757221E93489700FCDFB1 /* ThemeObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87571B1E93489700FCDFB1 /* ThemeObj.swift */; };
 		BA8757261E934AD400FCDFB1 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757251E934AD400FCDFB1 /* RealmManager.swift */; };
 		BA8757281E934AF700FCDFB1 /* RealmKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757271E934AF700FCDFB1 /* RealmKeys.swift */; };
-		BA87572A1E934CEA00FCDFB1 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8757291E934CEA00FCDFB1 /* PromiseKit.framework */; };
 		BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA87572D1E934E1600FCDFB1 /* ApplicationManager.swift */; };
 		BA8757311E934E6700FCDFB1 /* AppVersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757301E934E6700FCDFB1 /* AppVersionManager.swift */; };
 		BA8757331E934E8600FCDFB1 /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */; };
 		BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757351E934FC100FCDFB1 /* FontManager.swift */; };
 		BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */; };
+		BAD83AE01E9B79E9000F6813 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */; };
+		BAD83AE11E9B79E9000F6813 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */; };
+		BAD83AE21E9B79E9000F6813 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */; };
+		BAD83AE31E9B79E9000F6813 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADF1E9B79E9000F6813 /* RxTest.framework */; };
 		BADDF71F1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADDF71E1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework */; };
+		BADDF72A1E94F2CA00F35FF3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7291E94F2CA00F35FF3 /* BaseViewController.swift */; };
+		BADDF72C1E94F2DB00F35FF3 /* BaseSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF72B1E94F2DB00F35FF3 /* BaseSplitViewController.swift */; };
+		BADDF7311E94F35500F35FF3 /* ConnectionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7301E94F35500F35FF3 /* ConnectionListViewModel.swift */; };
+		BADDF7331E94F36700F35FF3 /* ConnectionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7321E94F36700F35FF3 /* ConnectionDetailViewModel.swift */; };
+		BADDF73F1E94F9CD00F35FF3 /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF73E1E94F9CD00F35FF3 /* MainStore.swift */; };
+		BADDF7411E94F9D400F35FF3 /* ConnectionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7401E94F9D400F35FF3 /* ConnectionStore.swift */; };
+		BADDF7431E94F9DB00F35FF3 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7421E94F9DB00F35FF3 /* Action.swift */; };
+		BADDF7451E94FAFA00F35FF3 /* ReduxStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7441E94FAFA00F35FF3 /* ReduxStore.swift */; };
+		BADDF7481E94FD3B00F35FF3 /* UpdateGroupConnectionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7471E94FD3B00F35FF3 /* UpdateGroupConnectionAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1802201E9C83E600096445 /* AppPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		BA1802221E9C843600096445 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAllGroupConnectionsWorker.swift; sourceTree = "<group>"; };
+		BA1802261E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewDefaultGroupConnectionWorker.swift; sourceTree = "<group>"; };
+		BA1802281E9C8A7900096445 /* CreateNewDatabaseWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewDatabaseWorker.swift; sourceTree = "<group>"; };
+		BA18022A1E9C8C5800096445 /* SelectConnectionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectConnectionWorker.swift; sourceTree = "<group>"; };
+		BA18022C1E9C8FF200096445 /* BaseWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
+		BA18022F1E9C902B00096445 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		BA18023C1E9C94E400096445 /* DefaultQuotation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultQuotation.json; sourceTree = "<group>"; };
 		BA8756121E923BCF00FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756151E923BCF00FCDFB1 /* TitanCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitanCore.h; sourceTree = "<group>"; };
 		BA8756161E923BCF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +121,20 @@
 		BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Keys.swift"; sourceTree = "<group>"; };
 		BA8757351E934FC100FCDFB1 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDataSourceProtocol.swift; sourceTree = "<group>"; };
+		BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
+		BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		BAD83ADF1E9B79E9000F6813 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/Mac/RxTest.framework; sourceTree = "<group>"; };
 		BADDF71E1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyPostgreSQL.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Titan-workspace-giunqhvetblyasacegghgnxmxrmd/Build/Products/Debug/SwiftyPostgreSQL.framework"; sourceTree = "<group>"; };
+		BADDF7291E94F2CA00F35FF3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BADDF72B1E94F2DB00F35FF3 /* BaseSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSplitViewController.swift; sourceTree = "<group>"; };
+		BADDF7301E94F35500F35FF3 /* ConnectionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionListViewModel.swift; sourceTree = "<group>"; };
+		BADDF7321E94F36700F35FF3 /* ConnectionDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailViewModel.swift; sourceTree = "<group>"; };
+		BADDF73E1E94F9CD00F35FF3 /* MainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		BADDF7401E94F9D400F35FF3 /* ConnectionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionStore.swift; sourceTree = "<group>"; };
+		BADDF7421E94F9DB00F35FF3 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		BADDF7441E94FAFA00F35FF3 /* ReduxStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxStore.swift; sourceTree = "<group>"; };
+		BADDF7471E94FD3B00F35FF3 /* UpdateGroupConnectionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateGroupConnectionAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +142,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD83AE01E9B79E9000F6813 /* RxBlocking.framework in Frameworks */,
+				BAD83AE11E9B79E9000F6813 /* RxCocoa.framework in Frameworks */,
+				BAD83AE21E9B79E9000F6813 /* RxSwift.framework in Frameworks */,
+				BAD83AE31E9B79E9000F6813 /* RxTest.framework in Frameworks */,
 				BADDF71F1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework in Frameworks */,
-				BA87572A1E934CEA00FCDFB1 /* PromiseKit.framework in Frameworks */,
 				BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */,
-				BA8756E71E933FCB00FCDFB1 /* Bond.framework in Frameworks */,
-				BA8756E81E933FCB00FCDFB1 /* Diff.framework in Frameworks */,
 				BA8756E91E933FCB00FCDFB1 /* ObjectMapper.framework in Frameworks */,
-				BA8756EA1E933FCB00FCDFB1 /* ReactiveKit.framework in Frameworks */,
 				BA8756EB1E933FCB00FCDFB1 /* Realm.framework in Frameworks */,
 				BA8756EC1E933FCB00FCDFB1 /* RealmSwift.framework in Frameworks */,
 				BA8756ED1E933FCB00FCDFB1 /* SnapKit.framework in Frameworks */,
@@ -119,6 +159,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA18021E1E9C83AC00096445 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				BA1802221E9C843600096445 /* Worker.swift */,
+				BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */,
+				BA1802261E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift */,
+				BA1802281E9C8A7900096445 /* CreateNewDatabaseWorker.swift */,
+				BA18022A1E9C8C5800096445 /* SelectConnectionWorker.swift */,
+			);
+			name = Worker;
+			sourceTree = "<group>";
+		};
+		BA18021F1E9C83DB00096445 /* App Preference */ = {
+			isa = PBXGroup;
+			children = (
+				BA1802201E9C83E600096445 /* AppPreferences.swift */,
+			);
+			name = "App Preference";
+			sourceTree = "<group>";
+		};
+		BA18022E1E9C902200096445 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				BA18022F1E9C902B00096445 /* NotificationManager.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		BA18023B1E9C94DD00096445 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BA18023C1E9C94E400096445 /* DefaultQuotation.json */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		BA8756081E923BCF00FCDFB1 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +215,7 @@
 		BA8756141E923BCF00FCDFB1 /* TitanCore */ = {
 			isa = PBXGroup;
 			children = (
+				BA18023B1E9C94DD00096445 /* Resource */,
 				BA87567B1E924DAC00FCDFB1 /* Configuration */,
 				BA87566E1E924D0A00FCDFB1 /* Source Code */,
 			);
@@ -148,6 +225,11 @@
 		BA87566E1E924D0A00FCDFB1 /* Source Code */ = {
 			isa = PBXGroup;
 			children = (
+				BA18021F1E9C83DB00096445 /* App Preference */,
+				BA18021E1E9C83AC00096445 /* Worker */,
+				BADDF7461E94FD2E00F35FF3 /* Actions */,
+				BADDF73D1E94F98C00F35FF3 /* Redux Store */,
+				BADDF7281E94F2BE00F35FF3 /* Base */,
 				BA8757051E93474F00FCDFB1 /* Extension */,
 				BA87567C1E924DD000FCDFB1 /* Constants */,
 				BA8757241E934AC600FCDFB1 /* Manager */,
@@ -161,8 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				BA8757081E9347B000FCDFB1 /* Logger */,
-				BA8756FB1E93460A00FCDFB1 /* View model */,
-				BA8756FA1E9345F900FCDFB1 /* Data Source */,
 				BA87567E1E924E1100FCDFB1 /* Objects */,
 			);
 			name = Model;
@@ -188,6 +268,8 @@
 		BA87567D1E924E0700FCDFB1 /* View model */ = {
 			isa = PBXGroup;
 			children = (
+				BADDF7301E94F35500F35FF3 /* ConnectionListViewModel.swift */,
+				BADDF7321E94F36700F35FF3 /* ConnectionDetailViewModel.swift */,
 			);
 			name = "View model";
 			sourceTree = "<group>";
@@ -213,6 +295,10 @@
 		BA8756921E9255ED00FCDFB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */,
+				BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */,
+				BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */,
+				BAD83ADF1E9B79E9000F6813 /* RxTest.framework */,
 				BADDF71E1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework */,
 				BA8757291E934CEA00FCDFB1 /* PromiseKit.framework */,
 				BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */,
@@ -246,14 +332,6 @@
 			name = "Data Source";
 			sourceTree = "<group>";
 		};
-		BA8756FB1E93460A00FCDFB1 /* View model */ = {
-			isa = PBXGroup;
-			children = (
-				BA8756FE1E93464F00FCDFB1 /* BaseViewModel.swift */,
-			);
-			name = "View model";
-			sourceTree = "<group>";
-		};
 		BA8757051E93474F00FCDFB1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +354,7 @@
 		BA8757241E934AC600FCDFB1 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				BA18022E1E9C902200096445 /* Notification */,
 				BA8757341E934FB900FCDFB1 /* Font */,
 				BA87572F1E934E5C00FCDFB1 /* App Version */,
 				BA87572C1E934E0800FCDFB1 /* Realm */,
@@ -315,6 +394,53 @@
 				BA8757351E934FC100FCDFB1 /* FontManager.swift */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		BADDF7281E94F2BE00F35FF3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF72F1E94F33300F35FF3 /* Controller */,
+				BADDF72E1E94F32F00F35FF3 /* View Model */,
+				BA8756FA1E9345F900FCDFB1 /* Data Source */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		BADDF72E1E94F32F00F35FF3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA8756FE1E93464F00FCDFB1 /* BaseViewModel.swift */,
+			);
+			name = "View Model";
+			sourceTree = "<group>";
+		};
+		BADDF72F1E94F33300F35FF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF7291E94F2CA00F35FF3 /* BaseViewController.swift */,
+				BADDF72B1E94F2DB00F35FF3 /* BaseSplitViewController.swift */,
+				BA18022C1E9C8FF200096445 /* BaseWindowController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BADDF73D1E94F98C00F35FF3 /* Redux Store */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF73E1E94F9CD00F35FF3 /* MainStore.swift */,
+				BADDF7401E94F9D400F35FF3 /* ConnectionStore.swift */,
+				BADDF7421E94F9DB00F35FF3 /* Action.swift */,
+				BADDF7441E94FAFA00F35FF3 /* ReduxStore.swift */,
+			);
+			name = "Redux Store";
+			sourceTree = "<group>";
+		};
+		BADDF7461E94FD2E00F35FF3 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF7471E94FD3B00F35FF3 /* UpdateGroupConnectionAction.swift */,
+			);
+			name = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +515,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA18023D1E9C94E400096445 /* DefaultQuotation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,15 +529,15 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Bond.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Diff.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/ObjectMapper.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/ReactiveKit.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/SwiftyBeaver.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/PromiseKit.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxTest.framework",
 			);
 			outputPaths = (
 			);
@@ -425,11 +552,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADDF7331E94F36700F35FF3 /* ConnectionDetailViewModel.swift in Sources */,
+				BA18022B1E9C8C5800096445 /* SelectConnectionWorker.swift in Sources */,
+				BA1802231E9C843600096445 /* Worker.swift in Sources */,
 				BA8757201E93489700FCDFB1 /* SSHObj.swift in Sources */,
 				BA8757101E93483200FCDFB1 /* UserObj.swift in Sources */,
 				BA87571C1E93489700FCDFB1 /* GroupColorObj.swift in Sources */,
 				BA8757221E93489700FCDFB1 /* ThemeObj.swift in Sources */,
+				BADDF7431E94F9DB00F35FF3 /* Action.swift in Sources */,
 				BA8757211E93489700FCDFB1 /* SSLObj.swift in Sources */,
+				BA1802251E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift in Sources */,
 				BA87571E1E93489700FCDFB1 /* InspiredQuotation.swift in Sources */,
 				BA8757141E93485100FCDFB1 /* DatabaseObj.swift in Sources */,
 				BA8757021E93471E00FCDFB1 /* BaseModel.swift in Sources */,
@@ -437,16 +569,28 @@
 				BA87571F1E93489700FCDFB1 /* QueryObj.swift in Sources */,
 				BA87570A1E9347BE00FCDFB1 /* Logger.swift in Sources */,
 				BA8757261E934AD400FCDFB1 /* RealmManager.swift in Sources */,
+				BADDF7481E94FD3B00F35FF3 /* UpdateGroupConnectionAction.swift in Sources */,
+				BA1802301E9C902B00096445 /* NotificationManager.swift in Sources */,
 				BA8757311E934E6700FCDFB1 /* AppVersionManager.swift in Sources */,
+				BADDF72C1E94F2DB00F35FF3 /* BaseSplitViewController.swift in Sources */,
+				BADDF72A1E94F2CA00F35FF3 /* BaseViewController.swift in Sources */,
+				BADDF73F1E94F9CD00F35FF3 /* MainStore.swift in Sources */,
 				BA87570C1E9347C500FCDFB1 /* SlackReporter.swift in Sources */,
+				BA1802271E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift in Sources */,
 				BA8756FD1E93463000FCDFB1 /* BaseTableViewDataSource.swift in Sources */,
+				BADDF7411E94F9D400F35FF3 /* ConnectionStore.swift in Sources */,
 				BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */,
 				BA8757071E93477500FCDFB1 /* BaseModel+Mapping.swift in Sources */,
 				BA8757331E934E8600FCDFB1 /* UserDefaults+Keys.swift in Sources */,
 				BA87571D1E93489700FCDFB1 /* GroupConnectionObj.swift in Sources */,
 				BA8756FF1E93464F00FCDFB1 /* BaseViewModel.swift in Sources */,
 				BA87570E1E93481000FCDFB1 /* UUID+Helper.swift in Sources */,
+				BA1802291E9C8A7900096445 /* CreateNewDatabaseWorker.swift in Sources */,
 				BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */,
+				BADDF7311E94F35500F35FF3 /* ConnectionListViewModel.swift in Sources */,
+				BA18022D1E9C8FF200096445 /* BaseWindowController.swift in Sources */,
+				BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */,
+				BADDF7451E94FAFA00F35FF3 /* ReduxStore.swift in Sources */,
 				BA8757041E93474400FCDFB1 /* Constants.swift in Sources */,
 				BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */,
 				BA8757281E934AF700FCDFB1 /* RealmKeys.swift in Sources */,

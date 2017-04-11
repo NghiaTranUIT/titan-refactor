@@ -7,7 +7,17 @@
 //
 
 import Cocoa
+import RxSwift
 
-class BaseViewModel {
+open class BaseViewModel {
     
+    //
+    // MARK: - Variable
+    public let disposeBag = DisposeBag()
+    
+    //
+    // MARK: - Init
+    public init() {
+        
+    }
 }

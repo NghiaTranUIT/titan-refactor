@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol CommonDataSourceProtocol: class {
+public protocol CommonDataSourceProtocol: class {
     
     // REQUIRED
     // Number of item
@@ -21,7 +21,6 @@ protocol CommonDataSourceProtocol: class {
     func CommonDataSourceItem(at indexPath: IndexPath) -> BaseModel
     
     // OPTIONAL
-    
     // View for Table column at row
     func CommonDataSourceViewFor(_ tableColumn: NSTableColumn?, row: Int) -> NSView?
     
@@ -37,7 +36,7 @@ protocol CommonDataSourceProtocol: class {
 
 //
 // MARK: - Extension for Optional method
-extension CommonDataSourceProtocol {
+public extension CommonDataSourceProtocol {
     
     func CommonDataSourceHeight(for row: Int) -> CGFloat {
         return 44.0
@@ -45,5 +44,13 @@ extension CommonDataSourceProtocol {
     
     func CommonDataSourceDidSelectedRow(at indexPath: IndexPath) {
         // Do nothings
+    }
+    
+    func CommonDataSourceRowView(for row: Int) -> NSTableRowView? {
+        return nil
+    }
+    
+    func CommonDataSourceViewFor(_ tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        return nil
     }
 }

@@ -12,7 +12,7 @@ import Realm
 import RealmSwift
 import SwiftyPostgreSQL
 
-final class DatabaseObj: BaseModel {
+open class DatabaseObj: BaseModel {
     
     //
     // MARK: - Variable
@@ -40,11 +40,11 @@ final class DatabaseObj: BaseModel {
     
     //
     // MARK: - Mapping
-    override class func objectForMapping(map: Map) -> BaseMappable? {
+    override public class func objectForMapping(map: Map) -> BaseMappable? {
         return DatabaseObj()
     }
     
-    override func mapping(map: Map) {
+    override public func mapping(map: Map) {
         super.mapping(map: map)
         
         self.name <- map[Constants.Obj.Database.Name]

@@ -7,17 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1802321E9C935800096445 /* DetailConnection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1802311E9C935800096445 /* DetailConnection.storyboard */; };
+		BA1802351E9C937A00096445 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802341E9C937A00096445 /* MainWindowController.swift */; };
+		BA1802371E9C93D400096445 /* DetailDatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802361E9C93D400096445 /* DetailDatabaseController.swift */; };
+		BA1802391E9C940100096445 /* DetailDatabaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802381E9C940100096445 /* DetailDatabaseWindowController.swift */; };
 		BA87562A1E923BEF00FCDFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */; };
 		BA87562E1E923BEF00FCDFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */; };
 		BA8756311E923BEF00FCDFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA87562F1E923BEF00FCDFB1 /* Main.storyboard */; };
-		BA8756DA1E92B13C00FCDFB1 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8756D91E92B13C00FCDFB1 /* ConnectionController.swift */; };
 		BA8756F41E93422600FCDFB1 /* TitanCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F31E93422600FCDFB1 /* TitanCore.framework */; };
 		BA8756F71E93442100FCDFB1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F51E93442100FCDFB1 /* Realm.framework */; };
 		BA8756F81E93442100FCDFB1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F61E93442100FCDFB1 /* RealmSwift.framework */; };
+		BADDF7231E94F29900F35FF3 /* ConnectionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7221E94F29900F35FF3 /* ConnectionListController.swift */; };
+		BADDF7261E94F2A300F35FF3 /* ConnectionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7241E94F2A300F35FF3 /* ConnectionDetailController.swift */; };
+		BADDF7361E94F39B00F35FF3 /* ConnectionSplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7351E94F39B00F35FF3 /* ConnectionSplitController.swift */; };
+		BADDF73C1E94F60300F35FF3 /* ConnectionListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF73B1E94F60300F35FF3 /* ConnectionListDataSource.swift */; };
 		BAF764191E94A3B2001A6545 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1802311E9C935800096445 /* DetailConnection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailConnection.storyboard; sourceTree = "<group>"; };
+		BA1802341E9C937A00096445 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		BA1802361E9C93D400096445 /* DetailDatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDatabaseController.swift; sourceTree = "<group>"; };
+		BA1802381E9C940100096445 /* DetailDatabaseWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDatabaseWindowController.swift; sourceTree = "<group>"; };
 		BA8756261E923BEF00FCDFB1 /* Titan_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titan_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -25,10 +36,13 @@
 		BA8756321E923BEF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8756671E924B6D00FCDFB1 /* SwiftyPostgreSQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyPostgreSQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA87566B1E924B8400FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA8756D91E92B13C00FCDFB1 /* ConnectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionController.swift; sourceTree = "<group>"; };
 		BA8756F31E93422600FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TitanCore.framework; path = ../TitanCore/build/Debug/TitanCore.framework; sourceTree = "<group>"; };
 		BA8756F51E93442100FCDFB1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
 		BA8756F61E93442100FCDFB1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		BADDF7221E94F29900F35FF3 /* ConnectionListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionListController.swift; sourceTree = "<group>"; };
+		BADDF7241E94F2A300F35FF3 /* ConnectionDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailController.swift; sourceTree = "<group>"; };
+		BADDF7351E94F39B00F35FF3 /* ConnectionSplitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSplitController.swift; sourceTree = "<group>"; };
+		BADDF73B1E94F60300F35FF3 /* ConnectionListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionListDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA1802331E9C936600096445 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				BA1802341E9C937A00096445 /* MainWindowController.swift */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
+		BA18023A1E9C940500096445 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				BA1802381E9C940100096445 /* DetailDatabaseWindowController.swift */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
 		BA87561D1E923BEF00FCDFB1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +129,7 @@
 		BA8756701E924D2800FCDFB1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BA8756791E924D9400FCDFB1 /* Database */,
+				BA8756791E924D9400FCDFB1 /* Detail Database */,
 				BA8756781E924D8300FCDFB1 /* Connection */,
 			);
 			name = Controller;
@@ -140,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				BA87562F1E923BEF00FCDFB1 /* Main.storyboard */,
+				BA1802311E9C935800096445 /* DetailConnection.storyboard */,
 			);
 			name = Xib;
 			sourceTree = "<group>";
@@ -163,16 +194,46 @@
 		BA8756781E924D8300FCDFB1 /* Connection */ = {
 			isa = PBXGroup;
 			children = (
-				BA8756D91E92B13C00FCDFB1 /* ConnectionController.swift */,
+				BA1802331E9C936600096445 /* Window */,
+				BADDF7341E94F38200F35FF3 /* Split */,
+				BADDF7211E94F28600F35FF3 /* Detail */,
+				BADDF7201E94F27E00F35FF3 /* List */,
 			);
 			name = Connection;
 			sourceTree = "<group>";
 		};
-		BA8756791E924D9400FCDFB1 /* Database */ = {
+		BA8756791E924D9400FCDFB1 /* Detail Database */ = {
 			isa = PBXGroup;
 			children = (
+				BA18023A1E9C940500096445 /* Window */,
+				BA1802361E9C93D400096445 /* DetailDatabaseController.swift */,
 			);
-			name = Database;
+			name = "Detail Database";
+			sourceTree = "<group>";
+		};
+		BADDF7201E94F27E00F35FF3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF73B1E94F60300F35FF3 /* ConnectionListDataSource.swift */,
+				BADDF7221E94F29900F35FF3 /* ConnectionListController.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		BADDF7211E94F28600F35FF3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF7241E94F2A300F35FF3 /* ConnectionDetailController.swift */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		BADDF7341E94F38200F35FF3 /* Split */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF7351E94F39B00F35FF3 /* ConnectionSplitController.swift */,
+			);
+			name = Split;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1802321E9C935800096445 /* DetailConnection.storyboard in Resources */,
 				BA87562E1E923BEF00FCDFB1 /* Assets.xcassets in Resources */,
 				BA8756311E923BEF00FCDFB1 /* Main.storyboard in Resources */,
 			);
@@ -266,8 +328,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADDF73C1E94F60300F35FF3 /* ConnectionListDataSource.swift in Sources */,
 				BA87562A1E923BEF00FCDFB1 /* AppDelegate.swift in Sources */,
-				BA8756DA1E92B13C00FCDFB1 /* ConnectionController.swift in Sources */,
+				BA1802351E9C937A00096445 /* MainWindowController.swift in Sources */,
+				BA1802391E9C940100096445 /* DetailDatabaseWindowController.swift in Sources */,
+				BA1802371E9C93D400096445 /* DetailDatabaseController.swift in Sources */,
+				BADDF7261E94F2A300F35FF3 /* ConnectionDetailController.swift in Sources */,
+				BADDF7361E94F39B00F35FF3 /* ConnectionSplitController.swift in Sources */,
+				BADDF7231E94F29900F35FF3 /* ConnectionListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -54,7 +54,7 @@ class Log: NSObject {
 
 // MARK:
 // MARK: Helper
-class Logger {
+open class Logger {
     
     // Helper
     // MARK: Public
@@ -62,7 +62,7 @@ class Logger {
         _ = Log.shareInstance
     }
     
-    class func error(_ error:Any, toSlack:Bool = true, fileName: String = #file, functionName: String = #function, line: Int = #line) {
+    public  class func error(_ error:Any, toSlack:Bool = true, fileName: String = #file, functionName: String = #function, line: Int = #line) {
         
         // Console
         Log.shareInstance.error(error, fileName: fileName, functionName: functionName, line: line)
@@ -73,19 +73,19 @@ class Logger {
         }
     }
     
-    class func warning(_ warning: Any, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
+    public  class func warning(_ warning: Any, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
         Log.shareInstance.warning(warning, file, function, line)
     }
     
-    class func debug(_ debug: Any, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
+    public  class func debug(_ debug: Any, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
         Log.shareInstance.debug(debug, file, function, line)
     }
     
-    class func info(_ info: Any, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
+    public  class func info(_ info: Any, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
         Log.shareInstance.info(info, file, function, line)
     }
     
-    class func verbose(_ verbose: Any, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
+    public class func verbose(_ verbose: Any, _ file: String = #file, _ function: String = #function, _ line: Int = #line) {
         Log.shareInstance.verbose(verbose, file, function, line)
     }
 }
