@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 import ObjectMapper
+import RxSwift
 
 //
 // MARK: - UserObj
@@ -55,10 +56,7 @@ final class UserObj: BaseModel {
             // Save
             RealmManager.sharedManager
                 .save(obj: Static.instance)
-                .then(execute: { _ -> Void in})
-                .catch(execute: { error in
-                    Logger.error(error)
-                })
+                .subscribe().addDisposableTo(DisposeBag())
         }
         
         return Static.instance

@@ -9,6 +9,7 @@
 import ObjectMapper
 import RealmSwift
 import Realm
+import RxSwift
 
 //
 // MARK: - BaseModel
@@ -16,10 +17,11 @@ open class BaseModel: Object {
     
     //
     // MARK: - Variable
-    dynamic var
-    objectId: String! = UUID.shortUUID()
+    dynamic var objectId: String! = UUID.shortUUID()
     dynamic var createdAt: Date! = Date()
     dynamic var updatedAt: Date! = Date()
+    
+    public let disposeBag = DisposeBag()
     
     /// Make objectId is primary key
     /// Obj must have primary key to support "Update" depend on primary key

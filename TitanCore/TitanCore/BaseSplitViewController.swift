@@ -12,7 +12,18 @@ open class BaseSplitViewController: NSSplitViewController {
 
     override open func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
+        // Init
+        self.initCommon()
     }
     
+}
+
+//
+// MARK: - Private
+extension BaseSplitViewController {
+    
+    fileprivate func initCommon() {
+        self.view.wantsLayer = true
+    }
 }

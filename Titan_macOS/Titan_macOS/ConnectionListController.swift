@@ -56,10 +56,10 @@ extension ConnectionListController {
 //
 // MARK: - CommonDataSourceProtocol
 extension ConnectionListController: CommonDataSourceProtocol {
-    
+
     // Number of item
     func CommonDataSourceNumberOfItem(at section: Int) -> Int {
-        
+        return 0
     }
     
     // Number of section
@@ -69,7 +69,7 @@ extension ConnectionListController: CommonDataSourceProtocol {
     
     // Item at index path
     func CommonDataSourceItem(at indexPath: IndexPath) -> BaseModel {
-        
+        return BaseModel()
     }
 }
  

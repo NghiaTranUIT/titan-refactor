@@ -12,7 +12,7 @@ import RealmSwift
 
 //
 // MARK: - GroupConnectionObj
-final class GroupConnectionObj: BaseModel {
+open class GroupConnectionObj: BaseModel {
     
     //
     // MARK: - Variable
@@ -22,11 +22,11 @@ final class GroupConnectionObj: BaseModel {
     
     //
     // MARK: - Mpaaing
-    override class func objectForMapping(map: Map) -> BaseMappable? {
+    override public class func objectForMapping(map: Map) -> BaseMappable? {
         return GroupConnectionObj()
     }
     
-    override func mapping(map: Map) {
+    override public func mapping(map: Map) {
         super.mapping(map: map)
         
         self.name <- map[Constants.Obj.GroupConnection.Name]

@@ -9,7 +9,7 @@
 import Realm
 import RealmSwift
 import Alamofire
-import PromiseKit
+import RxSwift
 
 typealias EmptyBlock = (Realm)->()
 
@@ -39,31 +39,29 @@ final class RealmManager {
     //
     // MARK: - Action
     // Fetch all
-    func fetchAll<T: Object>(type: T.Type) -> Promise<Results<T>> {
-        return Promise { fullfll, reject in
-            let results = self.realm.objects(type)
-            fullfll(results)
+    func fetchAll<T: Object>(type: T.Type) -> Observable<Results<T>> {
+        
+        // Temporary
+        return Observable.create { (observer) -> Disposable in
+            return Disposables.create()
         }
     }
     
     /// Is Exist
-    func isExist<T: Object>(type: T.Type, ID: String) -> Promise<Results<T>> {
-        return Promise { fullfll, reject in
-            let results = self.realm.objects(type).filter("\(Constants.Obj.ObjectId) = '\(ID)'")
-            fullfll(results)
+    func isExist<T: Object>(type: T.Type, ID: String) -> Observable<Results<T>> {
+        // Temporary
+        return Observable.create { (observer) -> Disposable in
+            return Disposables.create()
         }
     }
     
     /// Save
-    func save(obj: Object) -> Promise<Void> {
-        return Promise { fullfll, reject in
-            try! self.realm.write {
-                self.realm.add(obj, update: true)
-            }
-            fullfll(())
+    func save(obj: Object) -> Observable<Void> {
+        // Temporary
+        return Observable.create { (observer) -> Disposable in
+            return Disposables.create()
         }
     }
-    
     
     /// Fetch current user
     func fetchCurrentUser() -> UserObj? {
