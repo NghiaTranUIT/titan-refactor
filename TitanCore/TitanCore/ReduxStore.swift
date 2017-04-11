@@ -14,5 +14,5 @@ public protocol ReduxStore {
     var storyType: StoreType { get }
     
     // handle action
-    func dispatchAction(_ action: Action)
+    func handleAction(_ action: Action)
 }

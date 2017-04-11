@@ -17,7 +17,7 @@ class ConnectionListController: BaseViewController {
     
     //
     // MARK: - Variable
-    fileprivate lazy var dataSource: ConnectionListDataSource = self.initDataSource()
+    fileprivate lazy var dataSource: ConnectionListDataSource!
     fileprivate var viewModel: ConnectionListViewModel!
     
     //
@@ -26,6 +26,7 @@ class ConnectionListController: BaseViewController {
         super.viewDidLoad()
         
         self.initCommon()
+        self.initDataSource()
         self.initViewModel()
         
         // Fetch connection

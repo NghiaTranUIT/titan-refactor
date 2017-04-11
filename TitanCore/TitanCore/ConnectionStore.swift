@@ -24,11 +24,16 @@ open class ConnectionStore: ReduxStore {
     
     //
     // MARK: - Disaptch
-    public func dispatchAction(_ action: Action) {
+    public func handleAction(_ action: Action) {
         
         switch action {
         case let action as UpdateGroupConnectionAction:
             self.groupConnection = action.groupConnection
+            
+        case let _ as FetchAllGroupConnectionsAction:
+            
+            // Get from current User
+            self.groupConnection = UserObj.currentUser.groupConnections
             
         default: break
             // Do nothing

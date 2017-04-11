@@ -7,9 +7,16 @@
 //
 
 import Cocoa
+import RxSwift
 
 open class BaseViewController: NSViewController {
 
+    //
+    // MARK: - Variable
+    public let disposeBase = DisposeBag()
+    
+    //
+    // MARK: - View Cycle
     override open func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.

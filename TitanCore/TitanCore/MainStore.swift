@@ -21,22 +21,25 @@ open class MainStore: ReduxStore {
         return .mainStore
     }
     
+    // Global Main Store
+    static let globalStore = MainStore()
+    
     //
     // MARK: - Sub store
     public var connectionStore: ConnectionStore?
     
     //
     // MARK: - Dispatch Action
-    public func handleAction(_ action: Action) {
+    public func dispatch(_ action: Action) {
         
         // Get sub store
         let subStore = self.subStoreWithType(action)
         
         // Dispatch
-        subStore.dispatchAction(action)
+        subStore.handleAction(action)
     }
     
-    public func dispatchAction(_ action: Action) {
+    public func handleAction(_ action: Action) {
         
     }
 }

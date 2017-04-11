@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802201E9C83E600096445 /* AppPreferences.swift */; };
+		BA1802231E9C843600096445 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802221E9C843600096445 /* Worker.swift */; };
+		BA1802251E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */; };
 		BA8756171E923BCF00FCDFB1 /* TitanCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8756151E923BCF00FCDFB1 /* TitanCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */; };
 		BA8756E91E933FCB00FCDFB1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E01E933FCB00FCDFB1 /* ObjectMapper.framework */; };
@@ -56,6 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1802201E9C83E600096445 /* AppPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		BA1802221E9C843600096445 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAllGroupConnectionsWorker.swift; sourceTree = "<group>"; };
 		BA8756121E923BCF00FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756151E923BCF00FCDFB1 /* TitanCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitanCore.h; sourceTree = "<group>"; };
 		BA8756161E923BCF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +147,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA18021E1E9C83AC00096445 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				BA1802221E9C843600096445 /* Worker.swift */,
+				BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */,
+			);
+			name = Worker;
+			sourceTree = "<group>";
+		};
+		BA18021F1E9C83DB00096445 /* App Preference */ = {
+			isa = PBXGroup;
+			children = (
+				BA1802201E9C83E600096445 /* AppPreferences.swift */,
+			);
+			name = "App Preference";
+			sourceTree = "<group>";
+		};
 		BA8756081E923BCF00FCDFB1 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +193,8 @@
 		BA87566E1E924D0A00FCDFB1 /* Source Code */ = {
 			isa = PBXGroup;
 			children = (
+				BA18021F1E9C83DB00096445 /* App Preference */,
+				BA18021E1E9C83AC00096445 /* Worker */,
 				BADDF7461E94FD2E00F35FF3 /* Actions */,
 				BADDF73D1E94F98C00F35FF3 /* Redux Store */,
 				BADDF7281E94F2BE00F35FF3 /* Base */,
@@ -493,12 +518,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADDF7331E94F36700F35FF3 /* ConnectionDetailViewModel.swift in Sources */,
+				BA1802231E9C843600096445 /* Worker.swift in Sources */,
 				BA8757201E93489700FCDFB1 /* SSHObj.swift in Sources */,
 				BA8757101E93483200FCDFB1 /* UserObj.swift in Sources */,
 				BA87571C1E93489700FCDFB1 /* GroupColorObj.swift in Sources */,
 				BA8757221E93489700FCDFB1 /* ThemeObj.swift in Sources */,
 				BADDF7431E94F9DB00F35FF3 /* Action.swift in Sources */,
 				BA8757211E93489700FCDFB1 /* SSLObj.swift in Sources */,
+				BA1802251E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift in Sources */,
 				BA87571E1E93489700FCDFB1 /* InspiredQuotation.swift in Sources */,
 				BA8757141E93485100FCDFB1 /* DatabaseObj.swift in Sources */,
 				BA8757021E93471E00FCDFB1 /* BaseModel.swift in Sources */,
@@ -522,6 +549,7 @@
 				BA87570E1E93481000FCDFB1 /* UUID+Helper.swift in Sources */,
 				BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */,
 				BADDF7311E94F35500F35FF3 /* ConnectionListViewModel.swift in Sources */,
+				BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */,
 				BADDF7451E94FAFA00F35FF3 /* ReduxStore.swift in Sources */,
 				BA8757041E93474400FCDFB1 /* Constants.swift in Sources */,
 				BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */,
