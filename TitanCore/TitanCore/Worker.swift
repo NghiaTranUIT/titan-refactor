@@ -32,7 +32,7 @@ protocol SyncWorker: Worker {
     
     associatedtype T
     
-    func observable() -> T
+    func execute()
 }
 
 //
@@ -47,7 +47,7 @@ extension Worker {
 //
 // MARK: - Equatable
 extension Worker {
-    static func ==(lhs: Self, rhs: Self) -> Bool {
+    public static func ==(lhs: Self, rhs: Self) -> Bool {
         return lhs.id == rhs.id
     }
 }

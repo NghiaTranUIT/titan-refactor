@@ -47,7 +47,8 @@ open class ConnectionListViewModel: BaseViewModel {
     }
 
     public func selectedDatabaseObj(_ databaseObj: DatabaseObj) {
-        
+        let worker = SelectConnectionWorker(selectedDb: databaseObj)
+        worker.execute()
     }
 }
 
