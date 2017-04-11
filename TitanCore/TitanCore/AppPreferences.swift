@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AppPreferences {
+open class AppPreferences {
     
     //
     // MARK: - Share
@@ -61,5 +61,16 @@ class AppPreferences {
             }
             return value
         }
+    }
+}
+
+//
+// MARK: - Debug
+extension AppPreferences {
+    
+    /// Print default.realm location
+    public class func _dreamDatabaseLocation() {
+        let path = RealmManager.sharedManager.realm.configuration.fileURL?.path ?? "Unknow"
+        Logger.info("\(path)")
     }
 }

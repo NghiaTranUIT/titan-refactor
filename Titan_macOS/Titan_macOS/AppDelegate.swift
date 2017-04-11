@@ -40,6 +40,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
     }
 
+    deinit {
+        NotificationManager.removeAllObserve(self)
+    }
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
@@ -49,8 +53,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.detailDatabaseWindow.window?.makeKeyAndOrderFront(self)
     }
     
-    deinit {
-        NotificationManager.removeAllObserve(self)
+    @IBAction func realmLocationBtnTapped(_ sender: Any) {
+        AppPreferences._dreamDatabaseLocation()
     }
 }
 

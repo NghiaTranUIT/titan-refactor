@@ -656,7 +656,7 @@
                                         <menuItem title="Realm Location" id="88e-C1-hyp">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="showHelp:" target="Ady-hI-5gd" id="Few-no-Jh5"/>
+                                                <action selector="realmLocationBtnTapped:" target="Voe-Tx-rLC" id="3Nk-1m-mCa"/>
                                             </connections>
                                         </menuItem>
                                     </items>

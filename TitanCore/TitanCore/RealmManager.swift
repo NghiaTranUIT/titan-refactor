@@ -27,7 +27,7 @@ final class RealmManager {
     }()
     
     /// Realm Default
-    fileprivate var realm: Realm!
+    var realm: Realm!
     
     //
     // MARK: - Initializer

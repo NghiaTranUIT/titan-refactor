@@ -117,7 +117,6 @@
 		BA8756281E923BEF00FCDFB1 /* Titan_macOS */ = {
 			isa = PBXGroup;
 			children = (
-				BA18023E1E9CD83F00096445 /* Titan_macOS.entitlements */,
 				BA8756771E924D7600FCDFB1 /* Constants */,
 				BA8756741E924D3C00FCDFB1 /* App Delegate */,
 				BA8756731E924D3400FCDFB1 /* Resource */,
@@ -210,6 +209,7 @@
 		BA8756771E924D7600FCDFB1 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				BA18023E1E9CD83F00096445 /* Titan_macOS.entitlements */,
 				BA8756321E923BEF00FCDFB1 /* Info.plist */,
 			);
 			name = Constants;
