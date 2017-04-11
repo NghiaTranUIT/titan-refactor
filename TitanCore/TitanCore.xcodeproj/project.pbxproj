@@ -10,6 +10,8 @@
 		BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802201E9C83E600096445 /* AppPreferences.swift */; };
 		BA1802231E9C843600096445 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802221E9C843600096445 /* Worker.swift */; };
 		BA1802251E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */; };
+		BA1802271E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802261E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift */; };
+		BA1802291E9C8A7900096445 /* CreateNewDatabaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802281E9C8A7900096445 /* CreateNewDatabaseWorker.swift */; };
 		BA8756171E923BCF00FCDFB1 /* TitanCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8756151E923BCF00FCDFB1 /* TitanCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */; };
 		BA8756E91E933FCB00FCDFB1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E01E933FCB00FCDFB1 /* ObjectMapper.framework */; };
@@ -62,6 +64,8 @@
 		BA1802201E9C83E600096445 /* AppPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
 		BA1802221E9C843600096445 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAllGroupConnectionsWorker.swift; sourceTree = "<group>"; };
+		BA1802261E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewDefaultGroupConnectionWorker.swift; sourceTree = "<group>"; };
+		BA1802281E9C8A7900096445 /* CreateNewDatabaseWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewDatabaseWorker.swift; sourceTree = "<group>"; };
 		BA8756121E923BCF00FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756151E923BCF00FCDFB1 /* TitanCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitanCore.h; sourceTree = "<group>"; };
 		BA8756161E923BCF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 			children = (
 				BA1802221E9C843600096445 /* Worker.swift */,
 				BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */,
+				BA1802261E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift */,
+				BA1802281E9C8A7900096445 /* CreateNewDatabaseWorker.swift */,
 			);
 			name = Worker;
 			sourceTree = "<group>";
@@ -539,6 +545,7 @@
 				BADDF72A1E94F2CA00F35FF3 /* BaseViewController.swift in Sources */,
 				BADDF73F1E94F9CD00F35FF3 /* MainStore.swift in Sources */,
 				BA87570C1E9347C500FCDFB1 /* SlackReporter.swift in Sources */,
+				BA1802271E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift in Sources */,
 				BA8756FD1E93463000FCDFB1 /* BaseTableViewDataSource.swift in Sources */,
 				BADDF7411E94F9D400F35FF3 /* ConnectionStore.swift in Sources */,
 				BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */,
@@ -547,6 +554,7 @@
 				BA87571D1E93489700FCDFB1 /* GroupConnectionObj.swift in Sources */,
 				BA8756FF1E93464F00FCDFB1 /* BaseViewModel.swift in Sources */,
 				BA87570E1E93481000FCDFB1 /* UUID+Helper.swift in Sources */,
+				BA1802291E9C8A7900096445 /* CreateNewDatabaseWorker.swift in Sources */,
 				BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */,
 				BADDF7311E94F35500F35FF3 /* ConnectionListViewModel.swift in Sources */,
 				BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */,

@@ -30,7 +30,7 @@ open class ConnectionStore: ReduxStore {
         case let action as UpdateGroupConnectionAction:
             self.groupConnection = action.groupConnection
             
-        case let _ as FetchAllGroupConnectionsAction:
+        case _ as FetchAllGroupConnectionsAction:
             
             // Get from current User
             self.groupConnection = UserObj.currentUser.groupConnections

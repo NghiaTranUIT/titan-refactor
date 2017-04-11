@@ -8,6 +8,7 @@
 
 import Cocoa
 import RealmSwift
+import RxSwift
 
 open class ConnectionListViewModel: BaseViewModel {
 
@@ -21,7 +22,9 @@ open class ConnectionListViewModel: BaseViewModel {
         
         let worker = FetchAllGroupConnectionsWorker()
         worker.observable()
-            .subscribe(onNext: { (groups) in
+            .subscribe(onNext: {[weak self] (groups) in
+                guard let `self` = self else {return}
+                
                 // Create default
                 if groups.count == 0 {
                     self.createDefaultGroupDatabase()
@@ -39,9 +42,7 @@ open class ConnectionListViewModel: BaseViewModel {
                     self.selectedDatabaseObj(groups.first!.databases.first!)
                     return
                 }
-            }, onError: { (error) in
-                
-            })
+            }, onError: { Logger.error($0) })
             .addDisposableTo(self.disposeBag)
     }
 
@@ -58,25 +59,20 @@ extension ConnectionListViewModel {
         
         let worker = CreateNewDefaultGroupConnectionWorker()
         worker
-            .execute()
-            .thenOnMainTheard(execute: { group -> Promise<DatabaseObj> in
-                return CreateNewDatabaseWorker(groupConnectionObj: group)
-                    .execute()
-            })
-            .catch(execute: {[unowned self] error in
-                self.output.presentError(error as NSError)
-            })
+        .observable()
+        .flatMap({ (group) -> Observable<DatabaseObj> in
+            return CreateNewDatabaseWorker(groupConnectionObj: group).observable()
+        })
+        .subscribe(onError: { Logger.error($0) })
+        .addDisposableTo(self.disposeBag)
     }
     
     fileprivate func createNewDatabase(with groupObj: GroupConnectionObj) {
         
         let worker = CreateNewDatabaseWorker(groupConnectionObj: groupObj)
         worker
-            .execute()
-            .then(execute: { databaseObj -> Void in
-                Logger.debug(databaseObj)
-            }).catch(execute: { error in
-                Logger.error(error)
-            })
+        .observable()
+        .subscribe()
+        .addDisposableTo(self.disposeBag)
     }
 }

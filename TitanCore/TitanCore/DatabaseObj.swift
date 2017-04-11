@@ -12,7 +12,7 @@ import Realm
 import RealmSwift
 import SwiftyPostgreSQL
 
-final open class DatabaseObj: BaseModel {
+open class DatabaseObj: BaseModel {
     
     //
     // MARK: - Variable
