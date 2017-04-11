@@ -9,7 +9,7 @@
 import Cocoa
 import TitanCore
 
-class MainWindowController: BaseWindowController {
+class MainWindowController: MacBaseWindowController {
 
     override func windowDidLoad() {
         super.windowDidLoad()

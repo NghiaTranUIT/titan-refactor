@@ -9,10 +9,14 @@
 import Cocoa
 import TitanCore
 
-class DetailDatabaseWindowController: BaseWindowController {
+class DetailDatabaseWindowController: MacBaseWindowController {
 
     override func windowDidLoad() {
         super.windowDidLoad()
         
+    }
+    
+    deinit {
+        Logger.debug("DetailDatabaseWindowController window DEINIT")
     }
 }

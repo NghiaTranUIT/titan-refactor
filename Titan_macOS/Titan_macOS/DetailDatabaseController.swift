@@ -11,4 +11,24 @@ import TitanCore
 
 class DetailDatabaseController: BaseViewController {
     
+    //
+    // MARK: - Variable
+
+    //
+    // MARK: - View Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Init
+        self.initCommon()
+    }
+}
+
+//
+// MARK: - Private
+extension DetailDatabaseController {
+    
+    fileprivate func initCommon() {
+        
+    }
 }

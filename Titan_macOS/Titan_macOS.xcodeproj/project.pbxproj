@@ -11,6 +11,8 @@
 		BA1802351E9C937A00096445 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802341E9C937A00096445 /* MainWindowController.swift */; };
 		BA1802371E9C93D400096445 /* DetailDatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802361E9C93D400096445 /* DetailDatabaseController.swift */; };
 		BA1802391E9C940100096445 /* DetailDatabaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802381E9C940100096445 /* DetailDatabaseWindowController.swift */; };
+		BA1802401E9CDACC00096445 /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18023F1E9CDACC00096445 /* StoryboardManager.swift */; };
+		BA1802451E9CDC7B00096445 /* MacBaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802441E9CDC7B00096445 /* MacBaseWindowController.swift */; };
 		BA87562A1E923BEF00FCDFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */; };
 		BA87562E1E923BEF00FCDFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */; };
 		BA8756311E923BEF00FCDFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA87562F1E923BEF00FCDFB1 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		BA1802361E9C93D400096445 /* DetailDatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDatabaseController.swift; sourceTree = "<group>"; };
 		BA1802381E9C940100096445 /* DetailDatabaseWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDatabaseWindowController.swift; sourceTree = "<group>"; };
 		BA18023E1E9CD83F00096445 /* Titan_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Titan_macOS.entitlements; sourceTree = "<group>"; };
+		BA18023F1E9CDACC00096445 /* StoryboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
+		BA1802441E9CDC7B00096445 /* MacBaseWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacBaseWindowController.swift; sourceTree = "<group>"; };
 		BA8756261E923BEF00FCDFB1 /* Titan_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titan_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +81,22 @@
 			name = Window;
 			sourceTree = "<group>";
 		};
+		BA1802421E9CDC5A00096445 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				BA1802431E9CDC5E00096445 /* Base */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
+		BA1802431E9CDC5E00096445 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BA1802441E9CDC7B00096445 /* MacBaseWindowController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		BA87561D1E923BEF00FCDFB1 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +141,7 @@
 		BA87566F1E924D2300FCDFB1 /* Source Code */ = {
 			isa = PBXGroup;
 			children = (
+				BA1802421E9CDC5A00096445 /* Share */,
 				BA8756721E924D3000FCDFB1 /* Model */,
 				BA8756711E924D2D00FCDFB1 /* View */,
 				BA8756701E924D2800FCDFB1 /* Controller */,
@@ -147,6 +168,7 @@
 		BA8756721E924D3000FCDFB1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA18023F1E9CDACC00096445 /* StoryboardManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -343,6 +365,8 @@
 				BADDF7261E94F2A300F35FF3 /* ConnectionDetailController.swift in Sources */,
 				BADDF7361E94F39B00F35FF3 /* ConnectionSplitController.swift in Sources */,
 				BADDF7231E94F29900F35FF3 /* ConnectionListController.swift in Sources */,
+				BA1802451E9CDC7B00096445 /* MacBaseWindowController.swift in Sources */,
+				BA1802401E9CDACC00096445 /* StoryboardManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

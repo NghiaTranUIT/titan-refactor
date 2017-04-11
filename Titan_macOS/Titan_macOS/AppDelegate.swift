@@ -34,7 +34,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.observeNotification()
         
         // Show List database window
-        self.listDatabasesWindow = self.initListDatabasesWindow()
+        self.listDatabasesWindow = MainWindowController.controllerFromStoryboard(type: MainWindowController.self, storyboardName: .Main)
         self.listDatabasesWindow?.showWindow(self)
         self.listDatabasesWindow!.window?.makeKeyAndOrderFront(self)
         
@@ -52,24 +52,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     deinit {
         NotificationManager.removeAllObserve(self)
     }
-
-
 }
 
 //
 // MARK: - Private
 extension AppDelegate {
     
-    /// Get Main window
-    fileprivate func initListDatabasesWindow() -> MainWindowController {
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateController(withIdentifier: "MainWindowController") as! MainWindowController
-    }
-    
     /// Get detail window
     fileprivate func initDetailWindow() -> DetailDatabaseWindowController {
-        let storyboard = NSStoryboard(name: "DetailConnection", bundle: nil)
-        return storyboard.instantiateController(withIdentifier: "DetailDatabaseWindowController") as! DetailDatabaseWindowController
+        return DetailDatabaseWindowController.controllerFromStoryboard(type: DetailDatabaseWindowController.self, storyboardName: .DetailConnection)
     }
     
     /// Obverse
