@@ -22,7 +22,8 @@ class InspiredQuotation: BaseModel {
     //
     // MARK: - Import
     class func importDefaultQuotation() {
-        let pathJSON = Bundle.main.url(forResource: InspiredQuotation.defaultContentJSON, withExtension: "json")!
+        let bundle = Bundle(identifier: "com.fe.nghiatran.TitanCore")!
+        let pathJSON = bundle.url(forResource: InspiredQuotation.defaultContentJSON, withExtension: "json")!
         do {
             let data = try Data(contentsOf: pathJSON, options: Data.ReadingOptions.mappedIfSafe)
             guard let json = try! JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as? [[String: String]] else {return}

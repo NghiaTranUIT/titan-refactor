@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
@@ -663,7 +663,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="MainWindowController" id="B8D-0N-5wS" customClass="MainWindowController" customModule="Titan_macOS" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -992,14 +992,14 @@
                                                 <rect key="frame" x="100" y="8" width="461" height="28"/>
                                                 <subviews>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="5Iv-Im-6IJ">
-                                                        <rect key="frame" x="2" y="-50" width="162" height="128"/>
+                                                        <rect key="frame" x="2" y="4" width="52" height="20"/>
                                                         <buttonCell key="cell" type="bevel" title="SSH" alternateTitle="SSH" bezelStyle="regularSquare" image="icon_checkbox" imagePosition="left" alignment="left" alternateImage="icon_checkbox_selected" inset="2" id="SLA-vK-acD">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                             <font key="font" size="14" name="SFUIText-Semibold"/>
                                                         </buttonCell>
                                                     </button>
                                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="Hqy-Gt-xEA">
-                                                        <rect key="frame" x="176" y="-50" width="247" height="128"/>
+                                                        <rect key="frame" x="66" y="4" width="137" height="20"/>
                                                         <buttonCell key="cell" type="bevel" title="Save in Keychain" alternateTitle="Save in Keychain" bezelStyle="regularSquare" image="icon_checkbox" imagePosition="left" alignment="left" alternateImage="icon_checkbox_selected" state="on" inset="2" id="b58-ob-KYP">
                                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                             <font key="font" size="14" name="SFUIText-Semibold"/>
@@ -1065,7 +1065,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_checkbox" width="128" height="128"/>
-        <image name="icon_checkbox_selected" width="128" height="128"/>
+        <image name="icon_checkbox" width="18" height="18"/>
+        <image name="icon_checkbox_selected" width="16" height="16"/>
     </resources>
 </document>

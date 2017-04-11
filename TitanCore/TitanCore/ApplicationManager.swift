@@ -9,11 +9,11 @@
 
 import Foundation
 
-class ApplicationManager: NSObject {
+open class ApplicationManager: NSObject {
     
     //
     // MARK: - Variable
-    static let sharedInstance = ApplicationManager()
+    public static let sharedInstance = ApplicationManager()
     
     // Global Date formatter
     lazy var globalDateFormatter: DateFormatter = {
@@ -28,14 +28,14 @@ class ApplicationManager: NSObject {
     // MARK: Public
     
     /// SDK
-    func initAllSDKs() {
+    public func initAllSDKs() {
         
         // Fabric
         self.initFabric()
     }
     
     /// Common
-    func initCommon(window: NSWindow?) {
+    public func initCommon(window: NSWindow?) {
         
         // Logger
         self.initLogger()
@@ -48,7 +48,7 @@ class ApplicationManager: NSObject {
     }
     
     /// Default data
-    func importDefaultDataIfNeed() {
+    public func importDefaultDataIfNeed() {
         
         let userDefault = UserDefaults.standard
         let isFirstTime = userDefault.objectForKey(.isFirstTime) as? Bool

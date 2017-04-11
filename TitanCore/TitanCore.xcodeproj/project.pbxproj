@@ -13,6 +13,9 @@
 		BA1802271E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802261E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift */; };
 		BA1802291E9C8A7900096445 /* CreateNewDatabaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802281E9C8A7900096445 /* CreateNewDatabaseWorker.swift */; };
 		BA18022B1E9C8C5800096445 /* SelectConnectionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022A1E9C8C5800096445 /* SelectConnectionWorker.swift */; };
+		BA18022D1E9C8FF200096445 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022C1E9C8FF200096445 /* BaseWindowController.swift */; };
+		BA1802301E9C902B00096445 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022F1E9C902B00096445 /* NotificationManager.swift */; };
+		BA18023D1E9C94E400096445 /* DefaultQuotation.json in Resources */ = {isa = PBXBuildFile; fileRef = BA18023C1E9C94E400096445 /* DefaultQuotation.json */; };
 		BA8756171E923BCF00FCDFB1 /* TitanCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8756151E923BCF00FCDFB1 /* TitanCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */; };
 		BA8756E91E933FCB00FCDFB1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E01E933FCB00FCDFB1 /* ObjectMapper.framework */; };
@@ -68,6 +71,9 @@
 		BA1802261E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewDefaultGroupConnectionWorker.swift; sourceTree = "<group>"; };
 		BA1802281E9C8A7900096445 /* CreateNewDatabaseWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewDatabaseWorker.swift; sourceTree = "<group>"; };
 		BA18022A1E9C8C5800096445 /* SelectConnectionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectConnectionWorker.swift; sourceTree = "<group>"; };
+		BA18022C1E9C8FF200096445 /* BaseWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
+		BA18022F1E9C902B00096445 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		BA18023C1E9C94E400096445 /* DefaultQuotation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultQuotation.json; sourceTree = "<group>"; };
 		BA8756121E923BCF00FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756151E923BCF00FCDFB1 /* TitanCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitanCore.h; sourceTree = "<group>"; };
 		BA8756161E923BCF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -173,6 +179,22 @@
 			name = "App Preference";
 			sourceTree = "<group>";
 		};
+		BA18022E1E9C902200096445 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				BA18022F1E9C902B00096445 /* NotificationManager.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		BA18023B1E9C94DD00096445 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BA18023C1E9C94E400096445 /* DefaultQuotation.json */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		BA8756081E923BCF00FCDFB1 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +215,7 @@
 		BA8756141E923BCF00FCDFB1 /* TitanCore */ = {
 			isa = PBXGroup;
 			children = (
+				BA18023B1E9C94DD00096445 /* Resource */,
 				BA87567B1E924DAC00FCDFB1 /* Configuration */,
 				BA87566E1E924D0A00FCDFB1 /* Source Code */,
 			);
@@ -331,6 +354,7 @@
 		BA8757241E934AC600FCDFB1 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				BA18022E1E9C902200096445 /* Notification */,
 				BA8757341E934FB900FCDFB1 /* Font */,
 				BA87572F1E934E5C00FCDFB1 /* App Version */,
 				BA87572C1E934E0800FCDFB1 /* Realm */,
@@ -395,6 +419,7 @@
 			children = (
 				BADDF7291E94F2CA00F35FF3 /* BaseViewController.swift */,
 				BADDF72B1E94F2DB00F35FF3 /* BaseSplitViewController.swift */,
+				BA18022C1E9C8FF200096445 /* BaseWindowController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -490,6 +515,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA18023D1E9C94E400096445 /* DefaultQuotation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +570,7 @@
 				BA87570A1E9347BE00FCDFB1 /* Logger.swift in Sources */,
 				BA8757261E934AD400FCDFB1 /* RealmManager.swift in Sources */,
 				BADDF7481E94FD3B00F35FF3 /* UpdateGroupConnectionAction.swift in Sources */,
+				BA1802301E9C902B00096445 /* NotificationManager.swift in Sources */,
 				BA8757311E934E6700FCDFB1 /* AppVersionManager.swift in Sources */,
 				BADDF72C1E94F2DB00F35FF3 /* BaseSplitViewController.swift in Sources */,
 				BADDF72A1E94F2CA00F35FF3 /* BaseViewController.swift in Sources */,
@@ -561,6 +588,7 @@
 				BA1802291E9C8A7900096445 /* CreateNewDatabaseWorker.swift in Sources */,
 				BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */,
 				BADDF7311E94F35500F35FF3 /* ConnectionListViewModel.swift in Sources */,
+				BA18022D1E9C8FF200096445 /* BaseWindowController.swift in Sources */,
 				BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */,
 				BADDF7451E94FAFA00F35FF3 /* ReduxStore.swift in Sources */,
 				BA8757041E93474400FCDFB1 /* Constants.swift in Sources */,
