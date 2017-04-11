@@ -43,10 +43,9 @@ extension ConnectionListController {
         
     }
     
-    fileprivate func initDataSource() -> ConnectionListDataSource {
+    fileprivate func initDataSource() {
         let dataSource = ConnectionListDataSource(tableView: self.tableView)
         dataSource.delegate = self
-        return dataSource
     }
     
     fileprivate func initViewModel() {

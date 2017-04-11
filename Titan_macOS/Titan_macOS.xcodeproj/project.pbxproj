@@ -29,6 +29,7 @@
 		BA1802341E9C937A00096445 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		BA1802361E9C93D400096445 /* DetailDatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDatabaseController.swift; sourceTree = "<group>"; };
 		BA1802381E9C940100096445 /* DetailDatabaseWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailDatabaseWindowController.swift; sourceTree = "<group>"; };
+		BA18023E1E9CD83F00096445 /* Titan_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Titan_macOS.entitlements; sourceTree = "<group>"; };
 		BA8756261E923BEF00FCDFB1 /* Titan_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Titan_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756291E923BEF00FCDFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA87562D1E923BEF00FCDFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		BA8756281E923BEF00FCDFB1 /* Titan_macOS */ = {
 			isa = PBXGroup;
 			children = (
+				BA18023E1E9CD83F00096445 /* Titan_macOS.entitlements */,
 				BA8756771E924D7600FCDFB1 /* Constants */,
 				BA8756741E924D3C00FCDFB1 /* App Delegate */,
 				BA8756731E924D3400FCDFB1 /* Resource */,
@@ -271,6 +273,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D54Y88Y9CY;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -447,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Titan_macOS/Titan_macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = D54Y88Y9CY;
@@ -467,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Titan_macOS/Titan_macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = D54Y88Y9CY;

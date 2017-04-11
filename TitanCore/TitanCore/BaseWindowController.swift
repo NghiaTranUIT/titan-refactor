@@ -29,18 +29,10 @@ open class BaseWindowController: NSWindowController {
     }
     
     deinit {
-        NotificationManager.removeAllObserve(self)
-    }
-    
-    @objc func windowWillCloseNotification() {
-        guard let window = self.window else {return}
-        
-        // Save last previous frame
-        AppPreferences.shared.mainWindowFrame = window.frame
+        Logger.info("Window %@ is closed")
     }
     
     override open func close() {
-        NotificationManager.removeAllObserve(self)
         super.close()
     }
 
@@ -64,10 +56,13 @@ extension BaseWindowController {
         
         // Release mode
         window.isReleasedWhenClosed = true
+        
+        // Delegate
+        window.delegate = self
     }
     
     fileprivate func initObserver() {
-        NotificationManager.observeNotificationType(NotificationType.windowWillClose, observer: self, selector: #selector(self.windowWillCloseNotification), object: nil)
+        
     }
     
     fileprivate func restorePreviousWindowFrame() {
@@ -83,5 +78,17 @@ extension BaseWindowController {
         }
         
         window.setFrame(previousFrame, display: true)
+    }
+}
+
+//
+// MARK: - NSWindowDelegate
+extension BaseWindowController: NSWindowDelegate {
+    
+    public func windowWillClose(_ notification: Notification) {
+        guard let window = self.window else {return}
+        
+        // Save last previous frame
+        AppPreferences.shared.mainWindowFrame = window.frame
     }
 }
