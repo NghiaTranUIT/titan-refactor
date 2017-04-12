@@ -8,20 +8,20 @@
 
 import ObjectMapper
 
-class QueryObj: BaseModel {
+public class QueryObj: BaseModel {
 
     //
     // MARK: - Variable
-    dynamic var name: String!
-    dynamic var content: String!
+    public dynamic var name: String!
+    public dynamic var content: String!
     
     //
     // MARK: - Mapping
-    override class func objectForMapping(map: Map) -> BaseMappable? {
+    override public class func objectForMapping(map: Map) -> BaseMappable? {
         return QueryObj()
     }
     
-    override func mapping(map: Map) {
+    override public func mapping(map: Map) {
         super.mapping(map: map)
         
         self.name <- map[Constants.Obj.Query.Name]

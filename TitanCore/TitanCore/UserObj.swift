@@ -54,9 +54,9 @@ final class UserObj: BaseModel {
             Static.instance = guestUser
             
             // Save
-            RealmManager.sharedManager
-                .save(obj: Static.instance)
-                .subscribe().addDisposableTo(DisposeBag())
+            RealmManager.sharedManager.writeSync({ (realm) in
+                realm.add(Static.instance)
+            })
         }
         
         return Static.instance

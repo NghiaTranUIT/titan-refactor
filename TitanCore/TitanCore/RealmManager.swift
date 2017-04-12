@@ -11,20 +11,17 @@ import RealmSwift
 import Alamofire
 import RxSwift
 
-typealias EmptyBlock = (Realm)->()
+public typealias RealmBlock = (Realm)->()
 
-final class RealmManager {
+open class RealmManager {
     
     //
     // MARK: - Variable
-    static let sharedManager = RealmManager()
+    public static let sharedManager = RealmManager()
     
     /// Private Realm Configuration
     /// It get secret key from Keychain
-    private lazy var secrectRealmConfigure: Realm.Configuration = {
-        let configuration = Realm.Configuration(encryptionKey: RealmKey.getSecrectRealmKey())
-        return configuration
-    }()
+    fileprivate static let secrectRealmConfigure: Realm.Configuration = Realm.Configuration(encryptionKey: RealmKey.getSecrectRealmKey() as Data)
     
     /// Realm Default
     var realm: Realm!
@@ -42,7 +39,12 @@ final class RealmManager {
     func fetchAll<T: Object>(type: T.Type) -> Observable<Results<T>> {
         
         // Temporary
-        return Observable.create { (observer) -> Disposable in
+        return Observable.create {[unowned self] (observer) -> Disposable in
+            
+            let result = self.realm.objects(type)
+            observer.onNext(result)
+            observer.onCompleted()
+            
             return Disposables.create()
         }
     }
@@ -51,14 +53,11 @@ final class RealmManager {
     func isExist<T: Object>(type: T.Type, ID: String) -> Observable<Results<T>> {
         // Temporary
         return Observable.create { (observer) -> Disposable in
-            return Disposables.create()
-        }
-    }
-    
-    /// Save
-    func save(obj: Object) -> Observable<Void> {
-        // Temporary
-        return Observable.create { (observer) -> Disposable in
+            
+            let results = self.realm.objects(type).filter("\(Constants.Obj.ObjectId) = '\(ID)'")
+            observer.onNext(results)
+            observer.onCompleted()
+            
             return Disposables.create()
         }
     }
@@ -84,7 +83,7 @@ extension RealmManager {
     
     /// Write sync to realm-database
     /// It will write sync in current thread
-    func writeSync(_ block: EmptyBlock) {
+    public func writeSync(_ block: RealmBlock) {
         self.realm.beginWrite()
         block(self.realm)
         try! self.realm.commitWrite()
@@ -97,7 +96,7 @@ extension RealmManager {
     
     fileprivate static var defaultRealm: Realm {
         do {
-            //return try Realm(configuration: self.secrectRealmConfigure)
+            //return try Realm(configuration: RealmManager.secrectRealmConfigure)
             return try Realm()
         } catch let error as NSError {
             // If the encryption key is wrong, `error` will say that it's an invalid database

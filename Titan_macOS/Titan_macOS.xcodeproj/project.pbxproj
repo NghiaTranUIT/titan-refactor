@@ -296,8 +296,14 @@
 						DevelopmentTeam = D54Y88Y9CY;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
-							com.apple.Sandbox = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
 								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
 							};
 						};
 					};
@@ -489,8 +495,9 @@
 				INFOPLIST_FILE = Titan_macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fe.nghiatran.Titan-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fe.nghiatran.TitanMacOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -510,8 +517,9 @@
 				INFOPLIST_FILE = Titan_macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fe.nghiatran.Titan-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fe.nghiatran.TitanMacOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

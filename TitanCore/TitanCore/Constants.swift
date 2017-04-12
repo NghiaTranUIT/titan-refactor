@@ -36,7 +36,7 @@ struct Constants {
         //
         // MARK: - Realm
         struct Realm {
-            static let KeyChainID = "com.fe.titan.realm.pdoAR69Uv5WTseAhgA5va4eDONO9vgJOPV42DHFx"
+            static let KeyChainID = "com.fe.nghiatran.TitanMacOS"
         }
     }
     

@@ -16,6 +16,7 @@
 		BA18022D1E9C8FF200096445 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022C1E9C8FF200096445 /* BaseWindowController.swift */; };
 		BA1802301E9C902B00096445 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022F1E9C902B00096445 /* NotificationManager.swift */; };
 		BA18023D1E9C94E400096445 /* DefaultQuotation.json in Resources */ = {isa = PBXBuildFile; fileRef = BA18023C1E9C94E400096445 /* DefaultQuotation.json */; };
+		BA22A2B51E9D356900C2CB93 /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22A2B41E9D356900C2CB93 /* UICKeyChainStore.framework */; };
 		BA8756171E923BCF00FCDFB1 /* TitanCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8756151E923BCF00FCDFB1 /* TitanCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */; };
 		BA8756E91E933FCB00FCDFB1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E01E933FCB00FCDFB1 /* ObjectMapper.framework */; };
@@ -74,6 +75,7 @@
 		BA18022C1E9C8FF200096445 /* BaseWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 		BA18022F1E9C902B00096445 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		BA18023C1E9C94E400096445 /* DefaultQuotation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultQuotation.json; sourceTree = "<group>"; };
+		BA22A2B41E9D356900C2CB93 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICKeyChainStore.framework; path = Carthage/Build/Mac/UICKeyChainStore.framework; sourceTree = "<group>"; };
 		BA8756121E923BCF00FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756151E923BCF00FCDFB1 /* TitanCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitanCore.h; sourceTree = "<group>"; };
 		BA8756161E923BCF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				BAD83AE31E9B79E9000F6813 /* RxTest.framework in Frameworks */,
 				BADDF71F1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework in Frameworks */,
 				BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */,
+				BA22A2B51E9D356900C2CB93 /* UICKeyChainStore.framework in Frameworks */,
 				BA8756E91E933FCB00FCDFB1 /* ObjectMapper.framework in Frameworks */,
 				BA8756EB1E933FCB00FCDFB1 /* Realm.framework in Frameworks */,
 				BA8756EC1E933FCB00FCDFB1 /* RealmSwift.framework in Frameworks */,
@@ -295,6 +298,7 @@
 		BA8756921E9255ED00FCDFB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA22A2B41E9D356900C2CB93 /* UICKeyChainStore.framework */,
 				BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */,
 				BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */,
 				BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */,
@@ -488,7 +492,7 @@
 					BA8756111E923BCF00FCDFB1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D54Y88Y9CY;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -538,6 +542,7 @@
 				"$(SRCROOT)/Carthage/Build/Mac/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/UICKeyChainStore.framework",
 			);
 			outputPaths = (
 			);
