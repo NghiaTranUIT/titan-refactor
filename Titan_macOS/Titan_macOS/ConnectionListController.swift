@@ -13,7 +13,7 @@ class ConnectionListController: BaseViewController {
 
     //
     // MARK: - OUTLET
-    @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var collectionView: NSCollectionView!
     
     //
     // MARK: - Variable
@@ -44,8 +44,7 @@ extension ConnectionListController {
     }
     
     fileprivate func initDataSource() {
-        let dataSource = ConnectionListDataSource(tableView: self.tableView)
-        dataSource.delegate = self
+        
     }
     
     fileprivate func initViewModel() {

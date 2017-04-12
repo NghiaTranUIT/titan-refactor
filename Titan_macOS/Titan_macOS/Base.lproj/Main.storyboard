@@ -754,6 +754,9 @@
                             <constraint firstAttribute="trailing" secondItem="pRJ-wd-fzv" secondAttribute="trailing" id="xZm-Kc-gB4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="7rK-uo-fQE" id="uV4-zN-1RR"/>
+                    </connections>
                 </viewController>
                 <customObject id="7XF-nL-FWl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
