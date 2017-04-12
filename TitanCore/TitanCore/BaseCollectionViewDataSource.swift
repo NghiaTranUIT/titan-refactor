@@ -40,36 +40,28 @@ extension BaseCollectionViewDataSource {
 // MARK: - NSCollectionViewDataSource
 extension BaseCollectionViewDataSource: NSCollectionViewDataSource {
     
-    public func numberOfSections(in collectionView: NSCollectionView) -> Int {
-        guard let delegate = self.delegate else {
-            return 0
-        }
+    open func numberOfSections(in collectionView: NSCollectionView) -> Int {
         
-        return delegate.CommonDataSourceNumberOfSection()
+        // Need override
+        return 0
     }
     
-    public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let delegate = self.delegate else {
-            return 0
-        }
+    open func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return delegate.CommonDataSourceNumberOfItem(at: section)
+        // Need override
+        return 0
     }
     
-    public func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-        guard let delegate = self.delegate else {
-            return NSCollectionViewItem()
-        }
+    open func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         
-        return delegate.CommonDataSourceItemForRepresentedObjectAt(indexPath)
+        // Need override
+        return NSCollectionViewItem()
     }
     
-    public func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
-        guard let delegate = self.delegate else {
-            return NSView()
-        }
+    open func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
         
-        return delegate.CommonDataSourceViewForSupplementaryElement(of: kind, at: indexPath)
+        // Need override
+        return NSView()
     }
 }
 
@@ -77,11 +69,8 @@ extension BaseCollectionViewDataSource: NSCollectionViewDataSource {
 // MARK: - NSCollectionViewDelegate
 extension BaseCollectionViewDataSource: NSCollectionViewDelegate {
     
-    public func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
-        guard let delegate = self.delegate else {
-            return
-        }
+    open func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
         
-        delegate.CommonDataSourceDidSelectedRows(at: indexPaths)
+        // Need override
     }
 }

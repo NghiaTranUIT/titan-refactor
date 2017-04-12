@@ -23,6 +23,29 @@ class ConnectionListDataSource: BaseCollectionViewDataSource {
         
         self.setupCollectionView()
     }
+    
+    //
+    // MARK: - Override
+    public override func numberOfSections(in collectionView: NSCollectionView) -> Int {
+        guard let delegate = self.delegate else {return 0}
+        return delegate.CommonDataSourceNumberOfSection()
+    }
+    
+    public override func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let delegate = self.delegate else {return 0}
+        return delegate.CommonDataSourceNumberOfItem(at: section)
+    }
+    
+    override func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        guard let delegate = self.delegate else {return NSCollectionViewItem()}
+        
+        let databaseObj = delegate.CommonDataSourceItem(at: indexPath) as! DatabaseObj
+        return self.connectionCell(with: databaseObj, for: collectionView, indexPath: indexPath)
+    }
+    
+    override func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
+        
+    }
 }
 
 //
@@ -51,4 +74,26 @@ extension ConnectionListDataSource {
         // Reload
         self.collectionView.reloadData()
     }
+}
+
+//
+// MARK: - Private
+extension ConnectionListDataSource {
+    
+    /// Database cell
+    fileprivate func connectionCell(with databaseObj: DatabaseObj, for collectionView: NSCollectionView, indexPath: IndexPath) -> NSCollectionViewItem {
+        let cell = collectionView.makeItem(withIdentifier: ConnectionCell.identifierView, for: indexPath) as! ConnectionCell
+        //cell.delegate = self
+        cell.configureCell(with: databaseObj)
+        return cell
+    }
+    
+    /// Group Connection header
+    fileprivate func groupConnectionHeader(with groupConnectionObj: GroupConnectionObj, for collectionView: NSCollectionView, indexPath: IndexPath) -> NSView {
+        let header = collectionView.makeSupplementaryView(ofKind: NSCollectionElementKindSectionHeader, withIdentifier: ConnectionGroupCell.identifierView, for: indexPath) as! ConnectionGroupCell
+        //header.configureCellWith(groupConnectionObj: groupConnectionObj)
+        //header.delegate = self
+        return header
+    }
+
 }

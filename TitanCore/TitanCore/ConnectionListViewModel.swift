@@ -14,7 +14,7 @@ open class ConnectionListViewModel: BaseViewModel {
 
     //
     // MARK: - Variable
-    var groupConnections: List<GroupConnectionObj>!
+    fileprivate var groupConnections: List<GroupConnectionObj>!
     
     //
     // MARK: - Public
@@ -49,6 +49,25 @@ open class ConnectionListViewModel: BaseViewModel {
     public func selectedDatabaseObj(_ databaseObj: DatabaseObj) {
         let worker = SelectConnectionWorker(selectedDb: databaseObj)
         worker.execute()
+    }
+}
+
+//
+// MARK: - ViewModelAccessible
+extension ConnectionListViewModel: ViewModelAccessible {
+    
+    public typealias Element = GroupConnectionObj
+    
+    public var count: Int {
+        return self.groupConnections.count
+    }
+    
+    public func item(at index: Int) -> Element {
+        return self.groupConnections[index]
+    }
+    
+    public subscript(index: Int) -> Element {
+        return self.item(at: index)
     }
 }
 

@@ -9,6 +9,21 @@
 import Cocoa
 import RxSwift
 
+//
+// MARK: - ViewModelAccessible
+public protocol ViewModelAccessible {
+    
+    /// Kind of element
+    associatedtype Element
+    
+    /// Accessible
+    var count: Int {get}
+    func item(at index: Int) -> Element
+    subscript(index: Int) -> Element { get }
+}
+
+//
+// MARK: - BaseViewModel
 open class BaseViewModel {
     
     //

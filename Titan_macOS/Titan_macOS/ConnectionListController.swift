@@ -56,34 +56,22 @@ extension ConnectionListController {
 //
 // MARK: - CommonDataSourceProtocol
 extension ConnectionListController: BaseCollectionViewDataSourceProtocol {
-    
-    func CommonDataSourceDidSelectedRows(at indexPaths: Set<IndexPath>) {
-        
-    }
 
     // Number of item
     func CommonDataSourceNumberOfItem(at section: Int) -> Int {
-        return 0
+        let groupObj = self.viewModel[section]
+        return groupObj.databases.count
     }
     
     // Number of section
     func CommonDataSourceNumberOfSection() -> Int {
-        return 1
+        return self.viewModel.count
     }
     
     // Item at index path
     func CommonDataSourceItem(at indexPath: IndexPath) -> BaseModel {
-        return BaseModel()
-    }
-    
-    /// Get reprepresented Object
-    func CommonDataSourceItemForRepresentedObjectAt(_ indexPath: IndexPath) -> NSCollectionViewItem {
-        
-    }
-    
-    /// Get Supplementary Element
-    func CommonDataSourceViewForSupplementaryElement(of kind: String, at indexPath: IndexPath) -> NSView {
-        
+        let groupObj = self.viewModel[indexPath.section]
+        return groupObj.databases[indexPath.item]
     }
 }
 

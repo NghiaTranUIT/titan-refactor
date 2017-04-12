@@ -12,22 +12,11 @@ import Cocoa
 //
 // MARK: - Collection View Data Source
 public protocol BaseCollectionViewDataSourceProtocol: CommonDataSourceProtocol {
-    
-    /// Get reprepresented Object
-    func CommonDataSourceItemForRepresentedObjectAt(_ indexPath: IndexPath) -> NSCollectionViewItem
-    
-    /// Get Supplementary Element
-    func CommonDataSourceViewForSupplementaryElement(of kind: String, at indexPath: IndexPath) -> NSView
-    
-    /// OPTIONAL
-    func CommonDataSourceDidSelectedRows(at indexPaths: Set<IndexPath>)
+
 }
 
 //
 // MARK: - Default extension
 extension BaseCollectionViewDataSourceProtocol {
     
-    func CommonDataSourceDidSelectedRows(at indexPaths: Set<IndexPath>) {
-        // Do nothing
-    }
 }
