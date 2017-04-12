@@ -8,23 +8,23 @@
 
 import ObjectMapper
 
-class SSLObj: BaseModel {
+open class SSLObj: BaseModel {
 
     //
     // MARK: - Variable
-    dynamic var clientKeyFile: String!
-    dynamic var clientCertificate: String!
-    dynamic var serverRootCertificate: String!
-    dynamic var certificateRevocationList: String!
-    dynamic var sslCompression: Bool = false
+    dynamic public var clientKeyFile: String!
+    dynamic public var clientCertificate: String!
+    dynamic public var serverRootCertificate: String!
+    dynamic public var certificateRevocationList: String!
+    dynamic public var sslCompression: Bool = false
     
     //
     // MARK: - Mapping
-    override class func objectForMapping(map: Map) -> BaseMappable? {
+    override public class func objectForMapping(map: Map) -> BaseMappable? {
         return SSLObj()
     }
     
-    override func mapping(map: Map) {
+    override public func mapping(map: Map) {
         super.mapping(map: map)
         
         self.clientKeyFile <- map[Constants.Obj.SSL.ClientKeyFile]

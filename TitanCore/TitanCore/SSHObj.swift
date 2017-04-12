@@ -9,22 +9,22 @@
 import Cocoa
 import ObjectMapper
 
-class SSHObj: BaseModel {
+open class SSHObj: BaseModel {
 
     //
     // MARK: - Variable
-    dynamic var host: String!
-    dynamic var user: String!
-    dynamic var indentityFile: String = "~/.ssh/id_rsa"
-    dynamic var port: Int = 22
+    dynamic public var host: String!
+    dynamic public var user: String!
+    dynamic public var indentityFile: String = "~/.ssh/id_rsa"
+    dynamic public var port: Int = 22
 
     //
     // MARK: - Mapping
-    override class func objectForMapping(map: Map) -> BaseMappable? {
+    override public class func objectForMapping(map: Map) -> BaseMappable? {
         return SSHObj()
     }
     
-    override func mapping(map: Map) {
+    override public func mapping(map: Map) {
         super.mapping(map: map)
         
         self.host <- map[Constants.Obj.SSH.Host]

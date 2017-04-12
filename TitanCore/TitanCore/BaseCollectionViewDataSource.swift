@@ -9,12 +9,12 @@
 import Foundation
 import Cocoa
 
-public class BaseCollectionViewDataSource: NSObject {
+open class BaseCollectionViewDataSource: NSObject {
     
     //
     // MARK: - Variable
     public weak var delegate: BaseCollectionViewDataSourceProtocol?
-    fileprivate var collectionView: NSCollectionView!
+    public private(set) var collectionView: NSCollectionView!
     
     //
     // MARK: - Initialization

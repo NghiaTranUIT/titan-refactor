@@ -54,6 +54,11 @@
 		BAAE23D41E9DEA850071C794 /* BaseCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23D31E9DEA850071C794 /* BaseCollectionViewDataSource.swift */; };
 		BAAE23D61E9DEBAE0071C794 /* BaseTableViewDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23D51E9DEBAE0071C794 /* BaseTableViewDataSourceProtocol.swift */; };
 		BAAE23D91E9DEC390071C794 /* BaseCollectionViewDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23D81E9DEC390071C794 /* BaseCollectionViewDataSourceProtocol.swift */; };
+		BAAE23E41E9DFFD80071C794 /* NSView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E31E9DFFD80071C794 /* NSView+Xib.swift */; };
+		BAAE23E61E9DFFF20071C794 /* View+Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E51E9DFFF20071C794 /* View+Identity.swift */; };
+		BAAE23EA1E9E00620071C794 /* NSCollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E71E9E00620071C794 /* NSCollectionView+Register.swift */; };
+		BAAE23EB1E9E00620071C794 /* NSTableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E81E9E00620071C794 /* NSTableView+Register.swift */; };
+		BAAE23EC1E9E00620071C794 /* NSViewController+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E91E9E00620071C794 /* NSViewController+Identifier.swift */; };
 		BAD83AE01E9B79E9000F6813 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */; };
 		BAD83AE11E9B79E9000F6813 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */; };
 		BAD83AE21E9B79E9000F6813 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */; };
@@ -135,6 +140,11 @@
 		BAAE23D31E9DEA850071C794 /* BaseCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		BAAE23D51E9DEBAE0071C794 /* BaseTableViewDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDataSourceProtocol.swift; sourceTree = "<group>"; };
 		BAAE23D81E9DEC390071C794 /* BaseCollectionViewDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewDataSourceProtocol.swift; sourceTree = "<group>"; };
+		BAAE23E31E9DFFD80071C794 /* NSView+Xib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Xib.swift"; sourceTree = "<group>"; };
+		BAAE23E51E9DFFF20071C794 /* View+Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Identity.swift"; sourceTree = "<group>"; };
+		BAAE23E71E9E00620071C794 /* NSCollectionView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Register.swift"; sourceTree = "<group>"; };
+		BAAE23E81E9E00620071C794 /* NSTableView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTableView+Register.swift"; sourceTree = "<group>"; };
+		BAAE23E91E9E00620071C794 /* NSViewController+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSViewController+Identifier.swift"; sourceTree = "<group>"; };
 		BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
 		BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
 		BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
@@ -354,11 +364,16 @@
 		BA8757051E93474F00FCDFB1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BAAE23E71E9E00620071C794 /* NSCollectionView+Register.swift */,
+				BAAE23E81E9E00620071C794 /* NSTableView+Register.swift */,
+				BAAE23E91E9E00620071C794 /* NSViewController+Identifier.swift */,
 				BA8757061E93477500FCDFB1 /* BaseModel+Mapping.swift */,
 				BA87570D1E93481000FCDFB1 /* UUID+Helper.swift */,
 				BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */,
 				BAAE23CB1E9DDC780071C794 /* NSView+BackgroundColor.swift */,
 				BAAE23D11E9DE36F0071C794 /* NSColor+Hex.swift */,
+				BAAE23E31E9DFFD80071C794 /* NSView+Xib.swift */,
+				BAAE23E51E9DFFF20071C794 /* View+Identity.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -598,6 +613,7 @@
 				BA8757141E93485100FCDFB1 /* DatabaseObj.swift in Sources */,
 				BA8757021E93471E00FCDFB1 /* BaseModel.swift in Sources */,
 				BA8757121E93484100FCDFB1 /* SettingObj.swift in Sources */,
+				BAAE23EA1E9E00620071C794 /* NSCollectionView+Register.swift in Sources */,
 				BA87571F1E93489700FCDFB1 /* QueryObj.swift in Sources */,
 				BA87570A1E9347BE00FCDFB1 /* Logger.swift in Sources */,
 				BA8757261E934AD400FCDFB1 /* RealmManager.swift in Sources */,
@@ -608,6 +624,8 @@
 				BAAE23D61E9DEBAE0071C794 /* BaseTableViewDataSourceProtocol.swift in Sources */,
 				BADDF72A1E94F2CA00F35FF3 /* BaseViewController.swift in Sources */,
 				BADDF73F1E94F9CD00F35FF3 /* MainStore.swift in Sources */,
+				BAAE23E61E9DFFF20071C794 /* View+Identity.swift in Sources */,
+				BAAE23EC1E9E00620071C794 /* NSViewController+Identifier.swift in Sources */,
 				BA87570C1E9347C500FCDFB1 /* SlackReporter.swift in Sources */,
 				BAAE23D21E9DE36F0071C794 /* NSColor+Hex.swift in Sources */,
 				BA1802271E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift in Sources */,
@@ -621,6 +639,7 @@
 				BA87570E1E93481000FCDFB1 /* UUID+Helper.swift in Sources */,
 				BA1802291E9C8A7900096445 /* CreateNewDatabaseWorker.swift in Sources */,
 				BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */,
+				BAAE23E41E9DFFD80071C794 /* NSView+Xib.swift in Sources */,
 				BAAE23D91E9DEC390071C794 /* BaseCollectionViewDataSourceProtocol.swift in Sources */,
 				BADDF7311E94F35500F35FF3 /* ConnectionListViewModel.swift in Sources */,
 				BA18022D1E9C8FF200096445 /* BaseWindowController.swift in Sources */,
@@ -631,6 +650,7 @@
 				BA8757041E93474400FCDFB1 /* Constants.swift in Sources */,
 				BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */,
 				BA8757281E934AF700FCDFB1 /* RealmKeys.swift in Sources */,
+				BAAE23EB1E9E00620071C794 /* NSTableView+Register.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,9 +17,9 @@ open class BaseModel: Object {
     
     //
     // MARK: - Variable
-    dynamic var objectId: String! = UUID.shortUUID()
-    dynamic var createdAt: Date! = Date()
-    dynamic var updatedAt: Date! = Date()
+    dynamic public var objectId: String! = UUID.shortUUID()
+    dynamic public var createdAt: Date! = Date()
+    dynamic public var updatedAt: Date! = Date()
     
     public let disposeBag = DisposeBag()
     

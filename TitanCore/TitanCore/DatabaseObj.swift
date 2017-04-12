@@ -16,15 +16,15 @@ open class DatabaseObj: BaseModel {
     
     //
     // MARK: - Variable
-    dynamic var name: String = "New Connection"
-    dynamic var host: String = "localhost"
-    dynamic var username: String = "postgres"
-    dynamic var password: String = ""
-    dynamic var database: String = "postgres"
-    dynamic var port: Int = 5432
-    dynamic var saveToKeychain: Bool = true
-    dynamic var ssl: SSLObj?
-    dynamic var ssh: SSHObj?
+    dynamic public var name: String = "New Connection"
+    dynamic public var host: String = "localhost"
+    dynamic public var username: String = "postgres"
+    dynamic public var password: String = ""
+    dynamic public var database: String = "postgres"
+    dynamic public var port: Int = 5432
+    dynamic public var saveToKeychain: Bool = true
+    dynamic public var ssl: SSLObj?
+    dynamic public var ssh: SSHObj?
     let groupConnection = LinkingObjects(fromType: GroupConnectionObj.self, property: "databases")
     
     /// Default database

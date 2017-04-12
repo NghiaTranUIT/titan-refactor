@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Cocoa
 
 //
 // MARK: - Collection View Data Source
@@ -19,7 +20,7 @@ public protocol BaseCollectionViewDataSourceProtocol: CommonDataSourceProtocol {
     func CommonDataSourceViewForSupplementaryElement(of kind: String, at indexPath: IndexPath) -> NSView
     
     /// OPTIONAL
-    func CommonDataSourceDidSelectedRows(at indexPaths Set<IndexPath>)
+    func CommonDataSourceDidSelectedRows(at indexPaths: Set<IndexPath>)
 }
 
 //

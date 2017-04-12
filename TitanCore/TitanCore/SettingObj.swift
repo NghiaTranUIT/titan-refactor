@@ -8,6 +8,6 @@
 
 import Foundation
 
-class SettingObj: BaseModel {
+open class SettingObj: BaseModel {
     
 }

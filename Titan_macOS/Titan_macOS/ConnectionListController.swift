@@ -44,7 +44,8 @@ extension ConnectionListController {
     }
     
     fileprivate func initDataSource() {
-        
+        self.dataSource = ConnectionListDataSource(collectionView: self.collectionView)
+        self.dataSource.delegate = self
     }
     
     fileprivate func initViewModel() {
@@ -54,7 +55,11 @@ extension ConnectionListController {
 
 //
 // MARK: - CommonDataSourceProtocol
-extension ConnectionListController: CommonDataSourceProtocol {
+extension ConnectionListController: BaseCollectionViewDataSourceProtocol {
+    
+    func CommonDataSourceDidSelectedRows(at indexPaths: Set<IndexPath>) {
+        
+    }
 
     // Number of item
     func CommonDataSourceNumberOfItem(at section: Int) -> Int {
@@ -70,5 +75,15 @@ extension ConnectionListController: CommonDataSourceProtocol {
     func CommonDataSourceItem(at indexPath: IndexPath) -> BaseModel {
         return BaseModel()
     }
+    
+    /// Get reprepresented Object
+    func CommonDataSourceItemForRepresentedObjectAt(_ indexPath: IndexPath) -> NSCollectionViewItem {
+        
+    }
+    
+    /// Get Supplementary Element
+    func CommonDataSourceViewForSupplementaryElement(of kind: String, at indexPath: IndexPath) -> NSView {
+        
+    }
 }
- 
+
