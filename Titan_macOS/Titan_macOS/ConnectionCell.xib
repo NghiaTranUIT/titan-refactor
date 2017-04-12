@@ -42,6 +42,7 @@
             </constraints>
             <point key="canvasLocation" x="-256" y="58.5"/>
         </customView>
+        <collectionViewItem id="nHb-MR-jgx" customClass="ConnectionCell" customModule="Titan_macOS" customModuleProvider="target"/>
     </objects>
     <resources>
         <image name="icon_database" width="12" height="13"/>

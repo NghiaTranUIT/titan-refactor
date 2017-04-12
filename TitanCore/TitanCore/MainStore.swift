@@ -26,7 +26,7 @@ open class MainStore: ReduxStore {
     
     //
     // MARK: - Sub store
-    public var connectionStore: ConnectionStore?
+    public lazy var connectionStore: ConnectionStore = {return ConnectionStore()}()
     
     //
     // MARK: - Dispatch Action
@@ -54,15 +54,9 @@ extension MainStore {
         switch action.storeType {
         case .mainStore:
             return self
+            
         case .connectionStore:
-            
-            // Init
-            guard let store = self.connectionStore else {
-                self.connectionStore = ConnectionStore()
-                return self.connectionStore!
-            }
-            
-            return store
+            return self.connectionStore
         }
     }
 }

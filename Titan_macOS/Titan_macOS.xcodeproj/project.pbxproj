@@ -23,6 +23,7 @@
 		BAAE23DF1E9DFDDE0071C794 /* ConnectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23DD1E9DFDDE0071C794 /* ConnectionCell.swift */; };
 		BAAE23E01E9DFDDE0071C794 /* ConnectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAAE23DE1E9DFDDE0071C794 /* ConnectionCell.xib */; };
 		BAAE23E21E9DFDF20071C794 /* ConnectionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E11E9DFDF20071C794 /* ConnectionGroupCell.swift */; };
+		BAAE23EE1E9E0E490071C794 /* ConnectionGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAAE23ED1E9E0E490071C794 /* ConnectionGroupCell.xib */; };
 		BADDF7231E94F29900F35FF3 /* ConnectionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7221E94F29900F35FF3 /* ConnectionListController.swift */; };
 		BADDF7261E94F2A300F35FF3 /* ConnectionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7241E94F2A300F35FF3 /* ConnectionDetailController.swift */; };
 		BADDF7361E94F39B00F35FF3 /* ConnectionSplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7351E94F39B00F35FF3 /* ConnectionSplitController.swift */; };
@@ -52,6 +53,7 @@
 		BAAE23DD1E9DFDDE0071C794 /* ConnectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionCell.swift; sourceTree = "<group>"; };
 		BAAE23DE1E9DFDDE0071C794 /* ConnectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionCell.xib; sourceTree = "<group>"; };
 		BAAE23E11E9DFDF20071C794 /* ConnectionGroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionGroupCell.swift; sourceTree = "<group>"; };
+		BAAE23ED1E9E0E490071C794 /* ConnectionGroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionGroupCell.xib; sourceTree = "<group>"; };
 		BADDF7221E94F29900F35FF3 /* ConnectionListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionListController.swift; sourceTree = "<group>"; };
 		BADDF7241E94F2A300F35FF3 /* ConnectionDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailController.swift; sourceTree = "<group>"; };
 		BADDF7351E94F39B00F35FF3 /* ConnectionSplitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSplitController.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				BAAE23E11E9DFDF20071C794 /* ConnectionGroupCell.swift */,
+				BAAE23ED1E9E0E490071C794 /* ConnectionGroupCell.xib */,
 			);
 			name = Header;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			files = (
 				BA1802321E9C935800096445 /* DetailConnection.storyboard in Resources */,
 				BA87562E1E923BEF00FCDFB1 /* Assets.xcassets in Resources */,
+				BAAE23EE1E9E0E490071C794 /* ConnectionGroupCell.xib in Resources */,
 				BA8756311E923BEF00FCDFB1 /* Main.storyboard in Resources */,
 				BAAE23E01E9DFDDE0071C794 /* ConnectionCell.xib in Resources */,
 			);

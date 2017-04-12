@@ -26,8 +26,8 @@ class ConnectionListController: BaseViewController {
         super.viewDidLoad()
         
         self.initCommon()
-        self.initDataSource()
         self.initViewModel()
+        self.initDataSource()
         
         // Fetch connection
         self.viewModel.fetchAllDatabase()
@@ -70,8 +70,7 @@ extension ConnectionListController: BaseCollectionViewDataSourceProtocol {
     
     // Item at index path
     func CommonDataSourceItem(at indexPath: IndexPath) -> BaseModel {
-        let groupObj = self.viewModel[indexPath.section]
-        return groupObj.databases[indexPath.item]
+        return self.viewModel[indexPath.section]
     }
 }
 

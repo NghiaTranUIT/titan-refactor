@@ -14,7 +14,9 @@ open class ConnectionListViewModel: BaseViewModel {
 
     //
     // MARK: - Variable
-    fileprivate var groupConnections: List<GroupConnectionObj>!
+    fileprivate var groupConnections: List<GroupConnectionObj> {
+        return MainStore.globalStore.connectionStore.groupConnections.value
+    }
     
     //
     // MARK: - Public

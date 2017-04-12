@@ -29,7 +29,6 @@ class ConnectionCell: NSCollectionViewItem {
         self.view.backgroundColor = NSColor.red
     }
     
-    
     //
     // MARK: - Public
     func configureCell(with databaseObj: DatabaseObj) {

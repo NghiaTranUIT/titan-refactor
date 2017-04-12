@@ -38,9 +38,19 @@ class ConnectionListDataSource: BaseCollectionViewDataSource {
     
     override func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         guard let delegate = self.delegate else {return NSCollectionViewItem()}
+    
+        // Return cell
+        let groupObj = delegate.CommonDataSourceItem(at: indexPath) as! GroupConnectionObj
+        let databaseObj = groupObj.databases[indexPath.item]
+        return self.getConnectionCell(with: databaseObj, for: collectionView, indexPath: indexPath)
+    }
+    
+    override func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> NSView {
+        guard let delegate = self.delegate else {return NSView()}
         
-        let databaseObj = delegate.CommonDataSourceItem(at: indexPath) as! DatabaseObj
-        return self.connectionCell(with: databaseObj, for: collectionView, indexPath: indexPath)
+        // Return header
+        let groupObj = delegate.CommonDataSourceItem(at: indexPath) as! GroupConnectionObj
+        return self.getGroupConnectionHeader(with: groupObj, for: collectionView, indexPath: indexPath)
     }
     
     override func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
@@ -58,7 +68,8 @@ extension ConnectionListDataSource {
         self.collectionView.dataSource = self
         
         // Register
-        self.collectionView.registerCell(ConnectionCell.self)
+        //self.collectionView.registerCell(ConnectionCell.self)
+        self.collectionView.register(NSNib(nibNamed: "ConnectionCell", bundle: nil), forItemWithIdentifier: "ConnectionCell")
         self.collectionView.registerSupplementary(ConnectionGroupCell.self, kind: NSCollectionElementKindSectionHeader)
         
         // Flow layout
@@ -70,9 +81,6 @@ extension ConnectionListDataSource {
         flowLayout.sectionHeadersPinToVisibleBounds = false
         flowLayout.sectionFootersPinToVisibleBounds = false
         self.collectionView.collectionViewLayout = flowLayout
-        
-        // Reload
-        self.collectionView.reloadData()
     }
 }
 
@@ -81,7 +89,7 @@ extension ConnectionListDataSource {
 extension ConnectionListDataSource {
     
     /// Database cell
-    fileprivate func connectionCell(with databaseObj: DatabaseObj, for collectionView: NSCollectionView, indexPath: IndexPath) -> NSCollectionViewItem {
+    fileprivate func getConnectionCell(with databaseObj: DatabaseObj, for collectionView: NSCollectionView, indexPath: IndexPath) -> NSCollectionViewItem {
         let cell = collectionView.makeItem(withIdentifier: ConnectionCell.identifierView, for: indexPath) as! ConnectionCell
         //cell.delegate = self
         cell.configureCell(with: databaseObj)
@@ -89,7 +97,7 @@ extension ConnectionListDataSource {
     }
     
     /// Group Connection header
-    fileprivate func groupConnectionHeader(with groupConnectionObj: GroupConnectionObj, for collectionView: NSCollectionView, indexPath: IndexPath) -> NSView {
+    fileprivate func getGroupConnectionHeader(with groupConnectionObj: GroupConnectionObj, for collectionView: NSCollectionView, indexPath: IndexPath) -> NSView {
         let header = collectionView.makeSupplementaryView(ofKind: NSCollectionElementKindSectionHeader, withIdentifier: ConnectionGroupCell.identifierView, for: indexPath) as! ConnectionGroupCell
         //header.configureCellWith(groupConnectionObj: groupConnectionObj)
         //header.delegate = self
