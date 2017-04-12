@@ -19,6 +19,7 @@
 		BA8756F41E93422600FCDFB1 /* TitanCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F31E93422600FCDFB1 /* TitanCore.framework */; };
 		BA8756F71E93442100FCDFB1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F51E93442100FCDFB1 /* Realm.framework */; };
 		BA8756F81E93442100FCDFB1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756F61E93442100FCDFB1 /* RealmSwift.framework */; };
+		BAAE23CA1E9DDBDD0071C794 /* ConnectionListContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23C91E9DDBDD0071C794 /* ConnectionListContainerController.swift */; };
 		BADDF7231E94F29900F35FF3 /* ConnectionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7221E94F29900F35FF3 /* ConnectionListController.swift */; };
 		BADDF7261E94F2A300F35FF3 /* ConnectionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7241E94F2A300F35FF3 /* ConnectionDetailController.swift */; };
 		BADDF7361E94F39B00F35FF3 /* ConnectionSplitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7351E94F39B00F35FF3 /* ConnectionSplitController.swift */; };
@@ -44,6 +45,7 @@
 		BA8756F31E93422600FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TitanCore.framework; path = ../TitanCore/build/Debug/TitanCore.framework; sourceTree = "<group>"; };
 		BA8756F51E93442100FCDFB1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/Mac/Realm.framework; sourceTree = "<group>"; };
 		BA8756F61E93442100FCDFB1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/Mac/RealmSwift.framework; sourceTree = "<group>"; };
+		BAAE23C91E9DDBDD0071C794 /* ConnectionListContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionListContainerController.swift; sourceTree = "<group>"; };
 		BADDF7221E94F29900F35FF3 /* ConnectionListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionListController.swift; sourceTree = "<group>"; };
 		BADDF7241E94F2A300F35FF3 /* ConnectionDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetailController.swift; sourceTree = "<group>"; };
 		BADDF7351E94F39B00F35FF3 /* ConnectionSplitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionSplitController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		BA8756781E924D8300FCDFB1 /* Connection */ = {
 			isa = PBXGroup;
 			children = (
+				BAAE23C81E9DDBC40071C794 /* Main */,
 				BA1802331E9C936600096445 /* Window */,
 				BADDF7341E94F38200F35FF3 /* Split */,
 				BADDF7211E94F28600F35FF3 /* Detail */,
@@ -233,6 +236,14 @@
 				BA1802361E9C93D400096445 /* DetailDatabaseController.swift */,
 			);
 			name = "Detail Database";
+			sourceTree = "<group>";
+		};
+		BAAE23C81E9DDBC40071C794 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BAAE23C91E9DDBDD0071C794 /* ConnectionListContainerController.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 		BADDF7201E94F27E00F35FF3 /* List */ = {
@@ -373,6 +384,7 @@
 				BADDF7231E94F29900F35FF3 /* ConnectionListController.swift in Sources */,
 				BA1802451E9CDC7B00096445 /* MacBaseWindowController.swift in Sources */,
 				BA1802401E9CDACC00096445 /* StoryboardManager.swift in Sources */,
+				BAAE23CA1E9DDBDD0071C794 /* ConnectionListContainerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

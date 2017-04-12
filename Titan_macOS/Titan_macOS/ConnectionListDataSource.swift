@@ -12,6 +12,9 @@ import TitanCore
 class ConnectionListDataSource: BaseTableViewDataSource {
     
     //
+    // MARK: - Variable
+    
+    //
     // MARK: - Init
     override init(tableView: NSTableView) {
         super.init(tableView: tableView)
