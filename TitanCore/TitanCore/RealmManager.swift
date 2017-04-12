@@ -24,13 +24,24 @@ open class RealmManager {
     fileprivate static let secrectRealmConfigure: Realm.Configuration = Realm.Configuration(encryptionKey: RealmKey.getSecrectRealmKey() as Data)
     
     /// Realm Default
-    var realm: Realm!
+    fileprivate var _mainRealm: Realm!
+    public var realm: Realm {
+        
+        // If on main thread, we use _mainRealm
+        if Thread.isMainThread {
+            return _mainRealm
+        }
+        
+        // If background, we create new one
+        // Ref: https://realm.io/docs/swift/latest/#threading
+        return RealmManager.defaultRealm()
+    }
     
     //
     // MARK: - Initializer
     // Independcy injection -> For testing
-    init(realm: Realm? = RealmManager.defaultRealm) {
-        self.realm = realm
+    init(realm: Realm? = RealmManager.defaultRealm()) {
+        self._mainRealm = realm
     }
     
     //
@@ -94,7 +105,7 @@ extension RealmManager {
 // MARK: - Private
 extension RealmManager {
     
-    fileprivate static var defaultRealm: Realm {
+    fileprivate class func defaultRealm() -> Realm {
         do {
             //return try Realm(configuration: RealmManager.secrectRealmConfigure)
             return try Realm()

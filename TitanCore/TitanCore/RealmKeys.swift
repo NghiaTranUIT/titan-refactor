@@ -16,8 +16,8 @@ class RealmKey {
     // Auto generate key from Realm.KeyChainID
     // Save to keychain
     class func getSecrectRealmKey() -> NSData {
-        // Identifier for our keychain entry - should be unique for your application
         
+        // Identifier for our keychain entry - should be unique for your application
         if let data = self.keychain.data(forKey: Constants.Key.Realm.KeyChainID) {
             return data as NSData
         }
