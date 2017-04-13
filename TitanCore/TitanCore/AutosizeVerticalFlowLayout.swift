@@ -65,7 +65,7 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
         
         // Data
         let sizeScreen = collectionView.frame.size
-        var lastX = sizeScreen.height
+        var lastY: CGFloat = 0.0
         
         // Prepare data
         var cells: [IndexPath: NSCollectionViewLayoutAttributes] = [:]
@@ -75,27 +75,27 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
             
             // Header
             let headerAtt = NSCollectionViewLayoutAttributes(forSupplementaryViewOfKind: NSCollectionElementKindSectionHeader, with: IndexPath(item: 0, section: section))
-            let xHeader = lastX
-            headerAtt.frame = CGRect(x: xHeader, y: 0.0, width: self.sizeHeader.width, height: self.sizeHeader.height)
+            let yHeader = lastY
+            headerAtt.frame = CGRect(x: 0.0, y: yHeader, width: self.sizeHeader.width, height: self.sizeHeader.height)
             headerAtts.append(headerAtt)
             
-            lastX = lastX - self.sizeHeader.height
+            lastY = lastY + self.sizeHeader.height
             
             // Cells
             let sectionCount = self.itemCount[section] ?? 0
             for item in 0..<sectionCount {
                 
                 // Frame
-                let x = lastX
+                let y = lastY
                 
                 // INdex
                 let indexPath = IndexPath(item: item, section: section)
                 let att = NSCollectionViewLayoutAttributes(forItemWith: indexPath)
-                att.frame = CGRect(x: x, y: 0, width: self.sizeCell.width, height: self.sizeCell.height)
+                att.frame = CGRect(x: 0.0, y: y, width: self.sizeCell.width, height: self.sizeCell.height)
                 cells[indexPath] = att
                 
                 // Minus
-                lastX = lastX - self.sizeCell.height
+                lastY = lastY + self.sizeCell.height
             }
         }
         
@@ -118,6 +118,7 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
             height += CGFloat(count) * self.sizeCell.height
         }
         
+        height = max(height, collectionView.frame.height)
         return CGSize(width: collectionView.frame.width, height: height)
     }
     
@@ -144,6 +145,8 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
                 cells.append(att)
             }
         }
+        
+        Logger.info("Rect = \(rect), cells = \(cells.count)")
         
         return cells
     }

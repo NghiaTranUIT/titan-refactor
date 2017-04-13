@@ -73,13 +73,7 @@ extension ConnectionListDataSource {
         self.collectionView.registerSupplementary(ConnectionGroupCell.self, kind: NSCollectionElementKindSectionHeader)
         
         // Flow layout
-        let flowLayout = NSCollectionViewFlowLayout()
-        let width = collectionView.frame.size.width
-        flowLayout.itemSize = CGSize(width: 250, height: 31)
-        flowLayout.sectionInset = NSEdgeInsetsMake(0, 0, 6, 0)
-        flowLayout.headerReferenceSize = CGSize(width: width, height: 31)
-        flowLayout.sectionHeadersPinToVisibleBounds = false
-        flowLayout.sectionFootersPinToVisibleBounds = false
+        let flowLayout = AutosizeVerticalFlowLayout()
         self.collectionView.collectionViewLayout = flowLayout
     }
 }

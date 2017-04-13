@@ -17,6 +17,7 @@
 		BA1802301E9C902B00096445 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022F1E9C902B00096445 /* NotificationManager.swift */; };
 		BA18023D1E9C94E400096445 /* DefaultQuotation.json in Resources */ = {isa = PBXBuildFile; fileRef = BA18023C1E9C94E400096445 /* DefaultQuotation.json */; };
 		BA22A2B51E9D356900C2CB93 /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22A2B41E9D356900C2CB93 /* UICKeyChainStore.framework */; };
+		BA2B4E861E9F645700468572 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B4E851E9F645700468572 /* BaseCollectionView.swift */; };
 		BA8756171E923BCF00FCDFB1 /* TitanCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8756151E923BCF00FCDFB1 /* TitanCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */; };
 		BA8756E91E933FCB00FCDFB1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E01E933FCB00FCDFB1 /* ObjectMapper.framework */; };
@@ -87,6 +88,7 @@
 		BA18022F1E9C902B00096445 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		BA18023C1E9C94E400096445 /* DefaultQuotation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultQuotation.json; sourceTree = "<group>"; };
 		BA22A2B41E9D356900C2CB93 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICKeyChainStore.framework; path = Carthage/Build/Mac/UICKeyChainStore.framework; sourceTree = "<group>"; };
+		BA2B4E851E9F645700468572 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		BA8756121E923BCF00FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756151E923BCF00FCDFB1 /* TitanCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitanCore.h; sourceTree = "<group>"; };
 		BA8756161E923BCF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -220,6 +222,14 @@
 				BA18023C1E9C94E400096445 /* DefaultQuotation.json */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		BA2B4E841E9F643700468572 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA2B4E851E9F645700468572 /* BaseCollectionView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		BA8756081E923BCF00FCDFB1 = {
@@ -456,6 +466,7 @@
 		BADDF7281E94F2BE00F35FF3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				BA2B4E841E9F643700468572 /* View */,
 				BADDF72F1E94F33300F35FF3 /* Controller */,
 				BADDF72E1E94F32F00F35FF3 /* View Model */,
 				BA8756FA1E9345F900FCDFB1 /* Data Source */,
@@ -615,6 +626,7 @@
 				BA1802231E9C843600096445 /* Worker.swift in Sources */,
 				BA8757201E93489700FCDFB1 /* SSHObj.swift in Sources */,
 				BA8757101E93483200FCDFB1 /* UserObj.swift in Sources */,
+				BA2B4E861E9F645700468572 /* BaseCollectionView.swift in Sources */,
 				BA87571C1E93489700FCDFB1 /* GroupColorObj.swift in Sources */,
 				BA8757221E93489700FCDFB1 /* ThemeObj.swift in Sources */,
 				BADDF7431E94F9DB00F35FF3 /* Action.swift in Sources */,
