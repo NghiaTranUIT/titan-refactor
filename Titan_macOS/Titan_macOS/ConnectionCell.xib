@@ -21,11 +21,11 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Oe-8g-d9Y">
-                    <rect key="frame" x="37" y="8" width="12" height="13"/>
+                    <rect key="frame" x="22" y="9" width="12" height="13"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon_database" id="AQt-tV-g2O"/>
                 </imageView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soV-gN-aFa">
-                    <rect key="frame" x="57" y="7" width="69" height="18"/>
+                    <rect key="frame" x="42" y="7" width="69" height="18"/>
                     <textFieldCell key="cell" lineBreakMode="truncatingTail" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="Localhost" id="FLM-pq-NRM">
                         <font key="font" metaFont="systemMedium" size="14"/>
                         <color key="textColor" red="0.55294117649999996" green="0.57254901960000004" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -37,7 +37,7 @@
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="soV-gN-aFa" secondAttribute="trailing" constant="8" id="70f-6R-7dT"/>
                 <constraint firstItem="soV-gN-aFa" firstAttribute="centerY" secondItem="GSH-UX-iPS" secondAttribute="centerY" id="7su-um-4Es"/>
                 <constraint firstItem="8Oe-8g-d9Y" firstAttribute="centerY" secondItem="GSH-UX-iPS" secondAttribute="centerY" constant="1" id="ICC-eU-JXW"/>
-                <constraint firstItem="8Oe-8g-d9Y" firstAttribute="leading" secondItem="GSH-UX-iPS" secondAttribute="leading" constant="37" id="TTx-QV-qb1"/>
+                <constraint firstItem="8Oe-8g-d9Y" firstAttribute="leading" secondItem="GSH-UX-iPS" secondAttribute="leading" constant="22" id="TTx-QV-qb1"/>
                 <constraint firstItem="soV-gN-aFa" firstAttribute="leading" secondItem="8Oe-8g-d9Y" secondAttribute="trailing" constant="10" id="p9l-6h-BFQ"/>
             </constraints>
             <point key="canvasLocation" x="-256" y="58.5"/>

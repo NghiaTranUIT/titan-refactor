@@ -99,7 +99,7 @@ extension ConnectionListDataSource {
     /// Group Connection header
     fileprivate func getGroupConnectionHeader(with groupConnectionObj: GroupConnectionObj, for collectionView: NSCollectionView, indexPath: IndexPath) -> NSView {
         let header = collectionView.makeSupplementaryView(ofKind: NSCollectionElementKindSectionHeader, withIdentifier: ConnectionGroupCell.identifierView, for: indexPath) as! ConnectionGroupCell
-        //header.configureCellWith(groupConnectionObj: groupConnectionObj)
+        header.configureCellWith(groupConnectionObj: groupConnectionObj)
         //header.delegate = self
         return header
     }

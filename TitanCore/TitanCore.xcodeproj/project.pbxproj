@@ -59,6 +59,7 @@
 		BAAE23EA1E9E00620071C794 /* NSCollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E71E9E00620071C794 /* NSCollectionView+Register.swift */; };
 		BAAE23EB1E9E00620071C794 /* NSTableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E81E9E00620071C794 /* NSTableView+Register.swift */; };
 		BAAE23EC1E9E00620071C794 /* NSViewController+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E91E9E00620071C794 /* NSViewController+Identifier.swift */; };
+		BAAE23F11E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23F01E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift */; };
 		BAD83AE01E9B79E9000F6813 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */; };
 		BAD83AE11E9B79E9000F6813 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */; };
 		BAD83AE21E9B79E9000F6813 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */; };
@@ -145,6 +146,7 @@
 		BAAE23E71E9E00620071C794 /* NSCollectionView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Register.swift"; sourceTree = "<group>"; };
 		BAAE23E81E9E00620071C794 /* NSTableView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTableView+Register.swift"; sourceTree = "<group>"; };
 		BAAE23E91E9E00620071C794 /* NSViewController+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSViewController+Identifier.swift"; sourceTree = "<group>"; };
+		BAAE23F01E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutosizeVerticalFlowLayout.swift; sourceTree = "<group>"; };
 		BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
 		BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
 		BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 		BA87566E1E924D0A00FCDFB1 /* Source Code */ = {
 			isa = PBXGroup;
 			children = (
+				BAAE23EF1E9E1D640071C794 /* Flow Layer */,
 				BA18021F1E9C83DB00096445 /* App Preference */,
 				BA18021E1E9C83AC00096445 /* Worker */,
 				BADDF7461E94FD2E00F35FF3 /* Actions */,
@@ -442,6 +445,14 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		BAAE23EF1E9E1D640071C794 /* Flow Layer */ = {
+			isa = PBXGroup;
+			children = (
+				BAAE23F01E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift */,
+			);
+			name = "Flow Layer";
+			sourceTree = "<group>";
+		};
 		BADDF7281E94F2BE00F35FF3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,6 +638,7 @@
 				BAAE23E61E9DFFF20071C794 /* View+Identity.swift in Sources */,
 				BAAE23EC1E9E00620071C794 /* NSViewController+Identifier.swift in Sources */,
 				BA87570C1E9347C500FCDFB1 /* SlackReporter.swift in Sources */,
+				BAAE23F11E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift in Sources */,
 				BAAE23D21E9DE36F0071C794 /* NSColor+Hex.swift in Sources */,
 				BA1802271E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift in Sources */,
 				BA8756FD1E93463000FCDFB1 /* BaseTableViewDataSource.swift in Sources */,
