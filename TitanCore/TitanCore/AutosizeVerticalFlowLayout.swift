@@ -19,6 +19,7 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
     fileprivate var contentSize = CGSize.zero
     fileprivate var numberOfSection = 0
     fileprivate var itemCount: [Int: Int] = [:]
+    fileprivate let paddingSection: CGFloat = 6.0
     
     //
     // MARK: - Init
@@ -64,8 +65,7 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
         guard let collectionView = self.collectionView else {return}
         
         // Data
-        let sizeScreen = collectionView.frame.size
-        var lastY: CGFloat = 0.0
+        var lastY = self.paddingSection
         
         // Prepare data
         var cells: [IndexPath: NSCollectionViewLayoutAttributes] = [:]
@@ -97,6 +97,9 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
                 // Minus
                 lastY = lastY + self.sizeCell.height
             }
+            
+            // Padding section
+            lastY = lastY + self.paddingSection
         }
         
         // Content Size
@@ -112,7 +115,7 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
             return CGSize.zero
         }
         
-        var height =  CGFloat(self.numberOfSection) * self.sizeHeader.height
+        var height =  CGFloat(self.numberOfSection) * (self.sizeHeader.height + self.paddingSection)
         
         for count in self.itemCount.values {
             height += CGFloat(count) * self.sizeCell.height
