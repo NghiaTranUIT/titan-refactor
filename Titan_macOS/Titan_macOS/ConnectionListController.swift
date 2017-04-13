@@ -28,7 +28,8 @@ class ConnectionListController: BaseViewController {
         self.initCommon()
         self.initViewModel()
         self.initDataSource()
-        
+        self.binding()
+
         // Fetch connection
         self.viewModel.fetchAllDatabase()
     }
@@ -50,6 +51,18 @@ extension ConnectionListController {
     
     fileprivate func initViewModel() {
         self.viewModel = ConnectionListViewModel()
+    }
+    
+    fileprivate func binding() {
+        
+        // Reload data
+        
+        MainStore.globalStore.connectionStore.groupConnections.asObservable().subscribe(onNext: { _ in
+            self.collectionView.reloadData()
+        })
+        .addDisposableTo(self.disposeBase)
+ 
+ 
     }
 }
 

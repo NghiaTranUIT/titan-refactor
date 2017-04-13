@@ -62,8 +62,6 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
         // Update data
         self.updateDataSource()
         
-        guard let collectionView = self.collectionView else {return}
-        
         // Data
         var lastY = self.paddingSection
         
@@ -148,8 +146,6 @@ open class AutosizeVerticalFlowLayout: NSCollectionViewFlowLayout {
                 cells.append(att)
             }
         }
-        
-        Logger.info("Rect = \(rect), cells = \(cells.count)")
         
         return cells
     }

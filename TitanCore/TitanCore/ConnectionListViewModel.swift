@@ -13,6 +13,12 @@ import RxSwift
 open class ConnectionListViewModel: BaseViewModel {
 
     //
+    // MARK: - Input
+    public var groupConnectionsObserable: Observable<List<GroupConnectionObj>> {
+        return MainStore.globalStore.connectionStore.groupConnections.asObservable()
+    }
+    
+    //
     // MARK: - Variable
     fileprivate var groupConnections: List<GroupConnectionObj> {
         return MainStore.globalStore.connectionStore.groupConnections.value

@@ -22,7 +22,7 @@ open class MainStore: ReduxStore {
     }
     
     // Global Main Store
-    static let globalStore = MainStore()
+    public static let globalStore = MainStore()
     
     //
     // MARK: - Sub store
