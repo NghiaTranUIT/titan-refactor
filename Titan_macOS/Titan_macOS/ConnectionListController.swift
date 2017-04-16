@@ -26,12 +26,20 @@ class ConnectionListController: BaseViewController {
         super.viewDidLoad()
         
         self.initCommon()
-        self.initViewModel()
         self.initDataSource()
+        self.initViewModel()
         self.binding()
 
         // Fetch connection
-        self.viewModel.fetchAllDatabase()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.viewModel.fetchAllDatabasePublisher.onNext()
+        }
+        
+        // Observe isLoading
+        self.viewModel.isLoading.drive(onNext: { (isLoading) in
+            Logger.info("isLoading = \(isLoading)")
+        })
+        .addDisposableTo(self.disposeBase)
     }
     
 }
@@ -56,13 +64,14 @@ extension ConnectionListController {
     fileprivate func binding() {
         
         // Reload data
-        
-        MainStore.globalStore.connectionStore.groupConnections.asObservable().subscribe(onNext: { _ in
+        self.viewModel.groupConnectionsVariable.asObservable()
+            .filter({ (groups) -> Bool in
+                return groups.count > 0
+            })
+            .subscribe(onNext: { _ in
             self.collectionView.reloadData()
         })
         .addDisposableTo(self.disposeBase)
- 
- 
     }
 }
 

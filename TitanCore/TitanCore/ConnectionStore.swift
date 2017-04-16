@@ -74,7 +74,8 @@ open class ConnectionStore: ReduxStore {
                 group.append(action.groupConnectionObj)
             }
             
-        default: 
+        default:
+            
             // Do nothing
             assert(true, "Fotgo new action = \(action)")
             break

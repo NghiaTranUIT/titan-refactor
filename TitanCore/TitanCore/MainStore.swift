@@ -13,24 +13,24 @@ public enum StoreType {
     case connectionStore
 }
 
-open class MainStore: ReduxStore {
+class MainStore: ReduxStore {
 
     //
     // MARK: - Variable
-    public var storyType: StoreType {
+    var storyType: StoreType {
         return .mainStore
     }
     
     // Global Main Store
-    public static let globalStore = MainStore()
+    static let globalStore = MainStore()
     
     //
     // MARK: - Sub store
-    public lazy var connectionStore: ConnectionStore = {return ConnectionStore()}()
+    lazy var connectionStore: ConnectionStore = {return ConnectionStore()}()
     
     //
     // MARK: - Dispatch Action
-    public func dispatch(_ action: Action) {
+    func dispatch(_ action: Action) {
         
         // Get sub store
         let subStore = self.subStoreWithType(action)
@@ -39,7 +39,7 @@ open class MainStore: ReduxStore {
         subStore.handleAction(action)
     }
     
-    public func handleAction(_ action: Action) {
+    func handleAction(_ action: Action) {
         
     }
 }

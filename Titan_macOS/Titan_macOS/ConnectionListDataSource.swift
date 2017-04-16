@@ -87,6 +87,7 @@ extension ConnectionListDataSource {
         let cell = collectionView.makeItem(withIdentifier: ConnectionCell.identifierView, for: indexPath) as! ConnectionCell
         //cell.delegate = self
         cell.configureCell(with: databaseObj)
+        
         return cell
     }
     

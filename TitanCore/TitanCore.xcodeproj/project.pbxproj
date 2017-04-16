@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA179F511EA3A63200720760 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA179F501EA3A63200720760 /* ActivityIndicator.swift */; };
 		BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802201E9C83E600096445 /* AppPreferences.swift */; };
 		BA1802231E9C843600096445 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802221E9C843600096445 /* Worker.swift */; };
 		BA1802251E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA179F501EA3A63200720760 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		BA1802201E9C83E600096445 /* AppPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
 		BA1802221E9C843600096445 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAllGroupConnectionsWorker.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		BA18023B1E9C94DD00096445 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BA179F501EA3A63200720760 /* ActivityIndicator.swift */,
 				BA18023C1E9C94E400096445 /* DefaultQuotation.json */,
 			);
 			name = Resource;
@@ -636,6 +639,7 @@
 				BA8757021E93471E00FCDFB1 /* BaseModel.swift in Sources */,
 				BA8757121E93484100FCDFB1 /* SettingObj.swift in Sources */,
 				BAAE23EA1E9E00620071C794 /* NSCollectionView+Register.swift in Sources */,
+				BA179F511EA3A63200720760 /* ActivityIndicator.swift in Sources */,
 				BA87571F1E93489700FCDFB1 /* QueryObj.swift in Sources */,
 				BA87570A1E9347BE00FCDFB1 /* Logger.swift in Sources */,
 				BA8757261E934AD400FCDFB1 /* RealmManager.swift in Sources */,
