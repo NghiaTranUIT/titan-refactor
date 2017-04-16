@@ -11,33 +11,38 @@ import RealmSwift
 import RxSwift
 import RxCocoa
 
-protocol ConnectionListViewModelInput {
-    var isLoading: Driver<Bool> { get }
+public protocol ConnectionListViewModelInput {
     var fetchAllDatabasePublisher: PublishSubject<Void> { get }
 }
 
-protocol ConnectionListViewModelOutput {
+public protocol ConnectionListViewModelOutput {
+    var isLoading: Driver<Bool> { get }
     var groupConnectionsVariable: Variable<List<GroupConnectionObj>> { get }
 }
 
-protocol ConnectionListViewModelType {
+public protocol ConnectionListViewModelType {
     var input: ConnectionListViewModelInput { get }
-    var ouput: ConnectionListViewModelOutput { get }
+    var output: ConnectionListViewModelOutput { get }
 }
 
 
 //
 // MARK: - ConnectionListViewModel
-open class ConnectionListViewModel: BaseViewModel {
+open class ConnectionListViewModel: BaseViewModel, ConnectionListViewModelType, ConnectionListViewModelInput, ConnectionListViewModelOutput {
 
     //
+    // MARK: - View Model Type
+    public var output: ConnectionListViewModelOutput { return self }
+    public var input: ConnectionListViewModelInput { return self }
+    
+    //
     // MARK: - Input
-    fileprivate var _isLoading = ActivityIndicator()
-    public var isLoading: Driver<Bool> { return self._isLoading.asDriver()}
     public var fetchAllDatabasePublisher = PublishSubject<Void>()
     
     //
     // MARK: - Outut
+    fileprivate var _isLoading = ActivityIndicator()
+    public var isLoading: Driver<Bool> { return self._isLoading.asDriver()}
     public var groupConnectionsVariable: Variable<List<GroupConnectionObj>> {
         return MainStore.globalStore.connectionStore.groupConnections
     }
@@ -74,14 +79,6 @@ open class ConnectionListViewModel: BaseViewModel {
             return
         })
     }
-}
-
-//
-// MARK: - Type
-extension ConnectionListViewModel: ConnectionListViewModelType, ConnectionListViewModelInput, ConnectionListViewModelOutput {
-    
-    var ouput: ConnectionListViewModelOutput { return self }
-    var input: ConnectionListViewModelInput { return self }
 }
 
 //
@@ -128,9 +125,6 @@ extension ConnectionListViewModel {
                 }
                 
                 return Observable.empty()
-        }
-        .map { (_) -> Void in
-            return
         }
     }
     

@@ -29,17 +29,6 @@ class ConnectionListController: BaseViewController {
         self.initDataSource()
         self.initViewModel()
         self.binding()
-
-        // Fetch connection
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.viewModel.fetchAllDatabasePublisher.onNext()
-        }
-        
-        // Observe isLoading
-        self.viewModel.isLoading.drive(onNext: { (isLoading) in
-            Logger.info("isLoading = \(isLoading)")
-        })
-        .addDisposableTo(self.disposeBase)
     }
     
 }
@@ -72,6 +61,18 @@ extension ConnectionListController {
             self.collectionView.reloadData()
         })
         .addDisposableTo(self.disposeBase)
+        
+        // Fetch connection
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.viewModel.input.fetchAllDatabasePublisher.onNext()
+        }
+        
+        // Observe isLoading
+        self.viewModel.output.isLoading.drive(onNext: { (isLoading) in
+            Logger.info("isLoading = \(isLoading)")
+        })
+        .addDisposableTo(self.disposeBase)
+        
     }
 }
 
