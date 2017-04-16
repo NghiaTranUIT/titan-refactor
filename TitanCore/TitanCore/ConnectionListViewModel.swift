@@ -13,6 +13,10 @@ import RxCocoa
 
 public protocol ConnectionListViewModelInput {
     var fetchAllDatabasePublisher: PublishSubject<Void> { get }
+    var selectedDatabasePublisher: PublishSubject<DatabaseObj> { get }
+    var createGroupDatabasePublisher: PublishSubject<Void> { get }
+    var createDatabaseInGroupPublisher: PublishSubject<GroupConnectionObj> { get }
+    
 }
 
 public protocol ConnectionListViewModelOutput {
@@ -38,6 +42,9 @@ open class ConnectionListViewModel: BaseViewModel, ConnectionListViewModelType, 
     //
     // MARK: - Input
     public var fetchAllDatabasePublisher = PublishSubject<Void>()
+    public var selectedDatabasePublisher = PublishSubject<DatabaseObj>()
+    public var createGroupDatabasePublisher = PublishSubject<Void>()
+    public var createDatabaseInGroupPublisher = PublishSubject<GroupConnectionObj>()
     
     //
     // MARK: - Outut
@@ -64,21 +71,36 @@ open class ConnectionListViewModel: BaseViewModel, ConnectionListViewModelType, 
             .sample(self.fetchAllDatabasePublisher)
             .flatMap { _isLoading -> Observable<Void> in
                 if _isLoading.hashValue == 0 {
-                    return self.fetchDatabaseObserve()
+                    return self.fetchDatabaseWorker()
                 }
                 return Observable.empty()
         }.subscribe()
         .addDisposableTo(self.disposeBag)
+        
+        // Create new Group
+        self.createGroupDatabasePublisher
+        .flatMap { (_) -> Observable<Void> in
+            return self.createDefaultGroupDatabaseWorker()
+        }.subscribe()
+        .addDisposableTo(self.disposeBag)
+        
+        // Create new database into group
+        self.createDatabaseInGroupPublisher
+        .flatMap { (groupObj) -> Observable<Void> in
+            return self.createNewDatabaseWorker(with: groupObj)
+        }.subscribe()
+        .addDisposableTo(self.disposeBag)
+        
+        // Selected
+        self.selectedDatabasePublisher
+        .flatMap { (databaseObj) -> Observable<Void> in
+            return self.selectedDatabaseObjWorker(databaseObj)
+        }
+        .subscribe()
+        .addDisposableTo(self.disposeBag)
+        
     }
     
-    //
-    // MARK: - Public
-    public func selectedDatabaseObj(_ databaseObj: DatabaseObj) -> Observable<Void> {
-        let worker = SelectConnectionWorker(selectedDb: databaseObj)
-        return worker.observable().map({ (_) -> Void in
-            return
-        })
-    }
 }
 
 //
@@ -104,31 +126,31 @@ extension ConnectionListViewModel: ViewModelAccessible {
 // MARK: - Private
 extension ConnectionListViewModel {
     
-    fileprivate func fetchDatabaseObserve() -> Observable<Void> {
+    fileprivate func fetchDatabaseWorker() -> Observable<Void> {
         let worker = FetchAllGroupConnectionsWorker()
         return worker.observable().trackActivity(self._isLoading)
             .flatMap { (groups) -> Observable<Void> in
                 
                 // Create default
                 if groups.count == 0 {
-                    return self.createDefaultGroupDatabase()
+                    return self.createDefaultGroupDatabaseWorker()
                 }
                 
                 // Have Group, but no database
                 if groups.count == 1 && groups.first!.databases.count == 0 {
-                    return self.createNewDatabase(with: groups.first!)
+                    return self.createNewDatabaseWorker(with: groups.first!)
                 }
                 
                 // If have group, have databases -> Select first database
                 if groups.count >= 1 && groups.first!.databases.count > 0 {
-                    return self.selectedDatabaseObj(groups.first!.databases.first!)
+                    return self.selectedDatabaseObjWorker(groups.first!.databases.first!)
                 }
                 
                 return Observable.empty()
         }
     }
     
-    fileprivate func createDefaultGroupDatabase() -> Observable<Void> {
+    fileprivate func createDefaultGroupDatabaseWorker() -> Observable<Void> {
     
         let worker = CreateNewDefaultGroupConnectionWorker()
         return worker
@@ -141,12 +163,19 @@ extension ConnectionListViewModel {
         })
     }
     
-    fileprivate func createNewDatabase(with groupObj: GroupConnectionObj) -> Observable<Void> {
+    fileprivate func createNewDatabaseWorker(with groupObj: GroupConnectionObj) -> Observable<Void> {
         
         let worker = CreateNewDatabaseWorker(groupConnectionObj: groupObj)
         return worker
         .observable()
         .map({ _ -> Void in
+            return
+        })
+    }
+    
+    fileprivate func selectedDatabaseObjWorker(_ databaseObj: DatabaseObj) -> Observable<Void> {
+        let worker = SelectConnectionWorker(selectedDb: databaseObj)
+        return worker.observable().map({ (_) -> Void in
             return
         })
     }

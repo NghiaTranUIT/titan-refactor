@@ -28,6 +28,7 @@ public struct SelectConnectionWorker: AsyncWorker {
     /// Execute
     func observable() -> Observable<DatabaseObj> {
         return Observable.create({ (observer) -> Disposable in
+            
             let action = SelectConnectionAction(selectedConnection: self.selectedDb)
             MainStore.globalStore.dispatch(action)
             
