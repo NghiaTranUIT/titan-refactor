@@ -95,5 +95,12 @@ extension ConnectionListController: BaseCollectionViewDataSourceProtocol {
     func CommonDataSourceItem(at indexPath: IndexPath) -> BaseModel {
         return self.viewModel[indexPath.section]
     }
+    
+    /// Did selecte
+    func didSelectItem(at indexPaths: Set<IndexPath>) {
+        guard let indexPath = indexPaths.first else {return}
+        
+        self.viewModel.selectedDatabasePublisher.onNext(indexPath)
+    }
 }
 

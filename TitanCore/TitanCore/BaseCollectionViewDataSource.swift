@@ -73,4 +73,8 @@ extension BaseCollectionViewDataSource: NSCollectionViewDelegate {
         
         // Need override
     }
+    
+    open func collectionView(_ collectionView: NSCollectionView, didDeselectItemsAt indexPaths: Set<IndexPath>) {
+        
+    }
 }

@@ -13,7 +13,7 @@ import RxCocoa
 
 public protocol ConnectionListViewModelInput {
     var fetchAllDatabasePublisher: PublishSubject<Void> { get }
-    var selectedDatabasePublisher: PublishSubject<DatabaseObj> { get }
+    var selectedDatabasePublisher: PublishSubject<IndexPath> { get }
     var createGroupDatabasePublisher: PublishSubject<Void> { get }
     var createDatabaseInGroupPublisher: PublishSubject<GroupConnectionObj> { get }
     
@@ -42,7 +42,7 @@ open class ConnectionListViewModel: BaseViewModel, ConnectionListViewModelType, 
     //
     // MARK: - Input
     public var fetchAllDatabasePublisher = PublishSubject<Void>()
-    public var selectedDatabasePublisher = PublishSubject<DatabaseObj>()
+    public var selectedDatabasePublisher = PublishSubject<IndexPath>()
     public var createGroupDatabasePublisher = PublishSubject<Void>()
     public var createDatabaseInGroupPublisher = PublishSubject<GroupConnectionObj>()
     
@@ -93,7 +93,14 @@ open class ConnectionListViewModel: BaseViewModel, ConnectionListViewModelType, 
         
         // Selected
         self.selectedDatabasePublisher
+        .map({ (indexPath) -> DatabaseObj? in
+            let groupObj = self.item(at: indexPath.section)
+            return groupObj.databases[indexPath.item]
+        })
         .flatMap { (databaseObj) -> Observable<Void> in
+            guard let databaseObj = databaseObj else {
+                return Observable.empty()
+            }
             return self.selectedDatabaseObjWorker(databaseObj)
         }
         .subscribe()

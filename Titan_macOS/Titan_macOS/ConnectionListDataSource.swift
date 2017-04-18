@@ -54,7 +54,10 @@ class ConnectionListDataSource: BaseCollectionViewDataSource {
     }
     
     override func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
+        guard let delegate = self.delegate else {return}
         
+        // Select
+        delegate.didSelectItem(at: indexPaths)
     }
 }
 

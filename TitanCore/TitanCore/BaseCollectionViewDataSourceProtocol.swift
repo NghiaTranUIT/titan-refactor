@@ -13,10 +13,16 @@ import Cocoa
 // MARK: - Collection View Data Source
 public protocol BaseCollectionViewDataSourceProtocol: CommonDataSourceProtocol {
 
+    /// Selected Cell
+    func didSelectItem(at indexPaths: Set<IndexPath>)
 }
 
 //
 // MARK: - Default extension
 extension BaseCollectionViewDataSourceProtocol {
     
+    /// Selected cell
+    func didSelectItem(at indexPaths: Set<IndexPath>) {
+        // Do nothing
+    }
 }

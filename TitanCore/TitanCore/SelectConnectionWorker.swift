@@ -14,7 +14,7 @@ import RealmSwift
 // MARK: - Action
 struct SelectConnectionAction: Action {
     var selectedConnection: DatabaseObj
-    var storeType: StoreType {return .mainStore}
+    var storeType: StoreType {return .connectionStore}
 }
 
 //

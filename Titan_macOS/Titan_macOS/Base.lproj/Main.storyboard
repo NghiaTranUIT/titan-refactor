@@ -726,7 +726,7 @@
                                     <rect key="frame" x="1" y="1" width="333" height="592"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView id="7rK-uo-fQE" customClass="BaseCollectionView" customModule="TitanCore">
+                                        <collectionView selectable="YES" allowsEmptySelection="NO" id="7rK-uo-fQE" customClass="BaseCollectionView" customModule="TitanCore">
                                             <rect key="frame" x="0.0" y="0.0" width="333" height="592"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="Ot8-Pl-5sq">

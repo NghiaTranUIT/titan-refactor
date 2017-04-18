@@ -41,15 +41,6 @@ class ConnectionCell: NSCollectionViewItem {
             self.setupSelectionState()
         }
     }
-    
-    @IBAction func cellSelectedBtnTApped(_ sender: Any) {
-        guard let databaseObj = self.databaseObj else {return}
-        guard self.isSelected == false else {return}
-        
-        //self.delegate?.ConnectionCellShouldResetAllSelectionState()
-        self.isSelected = !self.isSelected
-        //self.delegate?.ConnectionCellDidSelectedCell(sender: self, databaseObj: databaseObj, isSelected: self.isSelected)
-    }
 }
 
 //
