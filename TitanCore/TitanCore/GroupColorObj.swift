@@ -11,11 +11,11 @@ import ObjectMapper
 
 //
 // MARK: - GroupColorObj
-class GroupColorObj: BaseModel {
+open class GroupColorObj: BaseModel {
     
     //
     // MARK: - Variable
-    dynamic var color: String!
+    dynamic public var color: String!
     
     //
     // MARK: - Init

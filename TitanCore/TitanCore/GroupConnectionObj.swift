@@ -16,9 +16,9 @@ open class GroupConnectionObj: BaseModel {
     
     //
     // MARK: - Variable
-    dynamic var name: String! = ""
-    dynamic var color: GroupColorObj!
-    let databases = List<DatabaseObj>()
+    dynamic public var name: String! = ""
+    dynamic public var color: GroupColorObj!
+    public let databases = List<DatabaseObj>()
     
     //
     // MARK: - Mpaaing

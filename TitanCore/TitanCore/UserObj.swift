@@ -13,13 +13,13 @@ import RxSwift
 
 //
 // MARK: - UserObj
-final class UserObj: BaseModel {
+open class UserObj: BaseModel {
     
     //
     // MARK: - Variable
-    dynamic var username = "guest"
-    dynamic var isGuest: Bool = true
-    let groupConnections = List<GroupConnectionObj>()
+    dynamic public var username = "guest"
+    dynamic public var isGuest: Bool = true
+    public let groupConnections = List<GroupConnectionObj>()
     
     //
     // MARK: - Current User
@@ -62,7 +62,7 @@ final class UserObj: BaseModel {
         return Static.instance
     }
     
-    override class func objectForMapping(map: Map) -> BaseMappable? {
+    override public class func objectForMapping(map: Map) -> BaseMappable? {
         return UserObj()
     }
 }

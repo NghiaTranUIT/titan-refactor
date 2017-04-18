@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA179F511EA3A63200720760 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA179F501EA3A63200720760 /* ActivityIndicator.swift */; };
 		BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802201E9C83E600096445 /* AppPreferences.swift */; };
 		BA1802231E9C843600096445 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802221E9C843600096445 /* Worker.swift */; };
 		BA1802251E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */; };
@@ -17,6 +18,7 @@
 		BA1802301E9C902B00096445 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA18022F1E9C902B00096445 /* NotificationManager.swift */; };
 		BA18023D1E9C94E400096445 /* DefaultQuotation.json in Resources */ = {isa = PBXBuildFile; fileRef = BA18023C1E9C94E400096445 /* DefaultQuotation.json */; };
 		BA22A2B51E9D356900C2CB93 /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22A2B41E9D356900C2CB93 /* UICKeyChainStore.framework */; };
+		BA2B4E861E9F645700468572 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B4E851E9F645700468572 /* BaseCollectionView.swift */; };
 		BA8756171E923BCF00FCDFB1 /* TitanCore.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8756151E923BCF00FCDFB1 /* TitanCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756DD1E933FCB00FCDFB1 /* Alamofire.framework */; };
 		BA8756E91E933FCB00FCDFB1 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8756E01E933FCB00FCDFB1 /* ObjectMapper.framework */; };
@@ -49,10 +51,20 @@
 		BA8757331E934E8600FCDFB1 /* UserDefaults+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */; };
 		BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757351E934FC100FCDFB1 /* FontManager.swift */; };
 		BA8757381E9351D500FCDFB1 /* CommonDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */; };
+		BAAE23CC1E9DDC780071C794 /* NSView+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23CB1E9DDC780071C794 /* NSView+BackgroundColor.swift */; };
+		BAAE23D21E9DE36F0071C794 /* NSColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23D11E9DE36F0071C794 /* NSColor+Hex.swift */; };
+		BAAE23D41E9DEA850071C794 /* BaseCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23D31E9DEA850071C794 /* BaseCollectionViewDataSource.swift */; };
+		BAAE23D61E9DEBAE0071C794 /* BaseTableViewDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23D51E9DEBAE0071C794 /* BaseTableViewDataSourceProtocol.swift */; };
+		BAAE23D91E9DEC390071C794 /* BaseCollectionViewDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23D81E9DEC390071C794 /* BaseCollectionViewDataSourceProtocol.swift */; };
+		BAAE23E41E9DFFD80071C794 /* NSView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E31E9DFFD80071C794 /* NSView+Xib.swift */; };
+		BAAE23E61E9DFFF20071C794 /* View+Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E51E9DFFF20071C794 /* View+Identity.swift */; };
+		BAAE23EA1E9E00620071C794 /* NSCollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E71E9E00620071C794 /* NSCollectionView+Register.swift */; };
+		BAAE23EB1E9E00620071C794 /* NSTableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E81E9E00620071C794 /* NSTableView+Register.swift */; };
+		BAAE23EC1E9E00620071C794 /* NSViewController+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23E91E9E00620071C794 /* NSViewController+Identifier.swift */; };
+		BAAE23F11E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE23F01E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift */; };
 		BAD83AE01E9B79E9000F6813 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */; };
 		BAD83AE11E9B79E9000F6813 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */; };
 		BAD83AE21E9B79E9000F6813 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */; };
-		BAD83AE31E9B79E9000F6813 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD83ADF1E9B79E9000F6813 /* RxTest.framework */; };
 		BADDF71F1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADDF71E1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework */; };
 		BADDF72A1E94F2CA00F35FF3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF7291E94F2CA00F35FF3 /* BaseViewController.swift */; };
 		BADDF72C1E94F2DB00F35FF3 /* BaseSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDF72B1E94F2DB00F35FF3 /* BaseSplitViewController.swift */; };
@@ -66,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA179F501EA3A63200720760 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		BA1802201E9C83E600096445 /* AppPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
 		BA1802221E9C843600096445 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		BA1802241E9C844F00096445 /* FetchAllGroupConnectionsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAllGroupConnectionsWorker.swift; sourceTree = "<group>"; };
@@ -76,6 +89,8 @@
 		BA18022F1E9C902B00096445 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		BA18023C1E9C94E400096445 /* DefaultQuotation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultQuotation.json; sourceTree = "<group>"; };
 		BA22A2B41E9D356900C2CB93 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICKeyChainStore.framework; path = Carthage/Build/Mac/UICKeyChainStore.framework; sourceTree = "<group>"; };
+		BA2B4E851E9F645700468572 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		BA2B4EA41E9F731F00468572 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BA8756121E923BCF00FCDFB1 /* TitanCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TitanCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8756151E923BCF00FCDFB1 /* TitanCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitanCore.h; sourceTree = "<group>"; };
 		BA8756161E923BCF00FCDFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +138,19 @@
 		BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Keys.swift"; sourceTree = "<group>"; };
 		BA8757351E934FC100FCDFB1 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDataSourceProtocol.swift; sourceTree = "<group>"; };
+		BAAE23CB1E9DDC780071C794 /* NSView+BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+BackgroundColor.swift"; sourceTree = "<group>"; };
+		BAAE23CD1E9DDF8D0071C794 /* DynamicColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicColor.framework; path = Carthage/Build/iOS/DynamicColor.framework; sourceTree = "<group>"; };
+		BAAE23CF1E9DE1420071C794 /* DynamicColorMacOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicColorMacOS.framework; path = Carthage/Build/Mac/DynamicColorMacOS.framework; sourceTree = "<group>"; };
+		BAAE23D11E9DE36F0071C794 /* NSColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Hex.swift"; sourceTree = "<group>"; };
+		BAAE23D31E9DEA850071C794 /* BaseCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		BAAE23D51E9DEBAE0071C794 /* BaseTableViewDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDataSourceProtocol.swift; sourceTree = "<group>"; };
+		BAAE23D81E9DEC390071C794 /* BaseCollectionViewDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewDataSourceProtocol.swift; sourceTree = "<group>"; };
+		BAAE23E31E9DFFD80071C794 /* NSView+Xib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Xib.swift"; sourceTree = "<group>"; };
+		BAAE23E51E9DFFF20071C794 /* View+Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Identity.swift"; sourceTree = "<group>"; };
+		BAAE23E71E9E00620071C794 /* NSCollectionView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Register.swift"; sourceTree = "<group>"; };
+		BAAE23E81E9E00620071C794 /* NSTableView+Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTableView+Register.swift"; sourceTree = "<group>"; };
+		BAAE23E91E9E00620071C794 /* NSViewController+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSViewController+Identifier.swift"; sourceTree = "<group>"; };
+		BAAE23F01E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutosizeVerticalFlowLayout.swift; sourceTree = "<group>"; };
 		BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
 		BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
 		BAD83ADE1E9B79E9000F6813 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
@@ -147,7 +175,6 @@
 				BAD83AE01E9B79E9000F6813 /* RxBlocking.framework in Frameworks */,
 				BAD83AE11E9B79E9000F6813 /* RxCocoa.framework in Frameworks */,
 				BAD83AE21E9B79E9000F6813 /* RxSwift.framework in Frameworks */,
-				BAD83AE31E9B79E9000F6813 /* RxTest.framework in Frameworks */,
 				BADDF71F1E94EFB800F35FF3 /* SwiftyPostgreSQL.framework in Frameworks */,
 				BA8756E61E933FCB00FCDFB1 /* Alamofire.framework in Frameworks */,
 				BA22A2B51E9D356900C2CB93 /* UICKeyChainStore.framework in Frameworks */,
@@ -193,9 +220,18 @@
 		BA18023B1E9C94DD00096445 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BA179F501EA3A63200720760 /* ActivityIndicator.swift */,
 				BA18023C1E9C94E400096445 /* DefaultQuotation.json */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		BA2B4E841E9F643700468572 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA2B4E851E9F645700468572 /* BaseCollectionView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		BA8756081E923BCF00FCDFB1 = {
@@ -228,6 +264,7 @@
 		BA87566E1E924D0A00FCDFB1 /* Source Code */ = {
 			isa = PBXGroup;
 			children = (
+				BAAE23EF1E9E1D640071C794 /* Flow Layer */,
 				BA18021F1E9C83DB00096445 /* App Preference */,
 				BA18021E1E9C83AC00096445 /* Worker */,
 				BADDF7461E94FD2E00F35FF3 /* Actions */,
@@ -298,6 +335,9 @@
 		BA8756921E9255ED00FCDFB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA2B4EA41E9F731F00468572 /* XCTest.framework */,
+				BAAE23CF1E9DE1420071C794 /* DynamicColorMacOS.framework */,
+				BAAE23CD1E9DDF8D0071C794 /* DynamicColor.framework */,
 				BA22A2B41E9D356900C2CB93 /* UICKeyChainStore.framework */,
 				BAD83ADC1E9B79E9000F6813 /* RxBlocking.framework */,
 				BAD83ADD1E9B79E9000F6813 /* RxCocoa.framework */,
@@ -330,8 +370,9 @@
 		BA8756FA1E9345F900FCDFB1 /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
-				BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */,
+				BAAE23D71E9DEBB10071C794 /* Protocols */,
 				BA8756FC1E93463000FCDFB1 /* BaseTableViewDataSource.swift */,
+				BAAE23D31E9DEA850071C794 /* BaseCollectionViewDataSource.swift */,
 			);
 			name = "Data Source";
 			sourceTree = "<group>";
@@ -339,9 +380,16 @@
 		BA8757051E93474F00FCDFB1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BAAE23E71E9E00620071C794 /* NSCollectionView+Register.swift */,
+				BAAE23E81E9E00620071C794 /* NSTableView+Register.swift */,
+				BAAE23E91E9E00620071C794 /* NSViewController+Identifier.swift */,
 				BA8757061E93477500FCDFB1 /* BaseModel+Mapping.swift */,
 				BA87570D1E93481000FCDFB1 /* UUID+Helper.swift */,
 				BA8757321E934E8600FCDFB1 /* UserDefaults+Keys.swift */,
+				BAAE23CB1E9DDC780071C794 /* NSView+BackgroundColor.swift */,
+				BAAE23D11E9DE36F0071C794 /* NSColor+Hex.swift */,
+				BAAE23E31E9DFFD80071C794 /* NSView+Xib.swift */,
+				BAAE23E51E9DFFF20071C794 /* View+Identity.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -400,9 +448,28 @@
 			name = Font;
 			sourceTree = "<group>";
 		};
+		BAAE23D71E9DEBB10071C794 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BAAE23D81E9DEC390071C794 /* BaseCollectionViewDataSourceProtocol.swift */,
+				BAAE23D51E9DEBAE0071C794 /* BaseTableViewDataSourceProtocol.swift */,
+				BA8757371E9351D500FCDFB1 /* CommonDataSourceProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		BAAE23EF1E9E1D640071C794 /* Flow Layer */ = {
+			isa = PBXGroup;
+			children = (
+				BAAE23F01E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift */,
+			);
+			name = "Flow Layer";
+			sourceTree = "<group>";
+		};
 		BADDF7281E94F2BE00F35FF3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				BA2B4E841E9F643700468572 /* View */,
 				BADDF72F1E94F33300F35FF3 /* Controller */,
 				BADDF72E1E94F32F00F35FF3 /* View Model */,
 				BA8756FA1E9345F900FCDFB1 /* Data Source */,
@@ -541,7 +608,6 @@
 				"$(SRCROOT)/Carthage/Build/Mac/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/RxTest.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/UICKeyChainStore.framework",
 			);
 			outputPaths = (
@@ -562,6 +628,7 @@
 				BA1802231E9C843600096445 /* Worker.swift in Sources */,
 				BA8757201E93489700FCDFB1 /* SSHObj.swift in Sources */,
 				BA8757101E93483200FCDFB1 /* UserObj.swift in Sources */,
+				BA2B4E861E9F645700468572 /* BaseCollectionView.swift in Sources */,
 				BA87571C1E93489700FCDFB1 /* GroupColorObj.swift in Sources */,
 				BA8757221E93489700FCDFB1 /* ThemeObj.swift in Sources */,
 				BADDF7431E94F9DB00F35FF3 /* Action.swift in Sources */,
@@ -571,6 +638,8 @@
 				BA8757141E93485100FCDFB1 /* DatabaseObj.swift in Sources */,
 				BA8757021E93471E00FCDFB1 /* BaseModel.swift in Sources */,
 				BA8757121E93484100FCDFB1 /* SettingObj.swift in Sources */,
+				BAAE23EA1E9E00620071C794 /* NSCollectionView+Register.swift in Sources */,
+				BA179F511EA3A63200720760 /* ActivityIndicator.swift in Sources */,
 				BA87571F1E93489700FCDFB1 /* QueryObj.swift in Sources */,
 				BA87570A1E9347BE00FCDFB1 /* Logger.swift in Sources */,
 				BA8757261E934AD400FCDFB1 /* RealmManager.swift in Sources */,
@@ -578,9 +647,14 @@
 				BA1802301E9C902B00096445 /* NotificationManager.swift in Sources */,
 				BA8757311E934E6700FCDFB1 /* AppVersionManager.swift in Sources */,
 				BADDF72C1E94F2DB00F35FF3 /* BaseSplitViewController.swift in Sources */,
+				BAAE23D61E9DEBAE0071C794 /* BaseTableViewDataSourceProtocol.swift in Sources */,
 				BADDF72A1E94F2CA00F35FF3 /* BaseViewController.swift in Sources */,
 				BADDF73F1E94F9CD00F35FF3 /* MainStore.swift in Sources */,
+				BAAE23E61E9DFFF20071C794 /* View+Identity.swift in Sources */,
+				BAAE23EC1E9E00620071C794 /* NSViewController+Identifier.swift in Sources */,
 				BA87570C1E9347C500FCDFB1 /* SlackReporter.swift in Sources */,
+				BAAE23F11E9E1D880071C794 /* AutosizeVerticalFlowLayout.swift in Sources */,
+				BAAE23D21E9DE36F0071C794 /* NSColor+Hex.swift in Sources */,
 				BA1802271E9C89D600096445 /* CreateNewDefaultGroupConnectionWorker.swift in Sources */,
 				BA8756FD1E93463000FCDFB1 /* BaseTableViewDataSource.swift in Sources */,
 				BADDF7411E94F9D400F35FF3 /* ConnectionStore.swift in Sources */,
@@ -592,13 +666,18 @@
 				BA87570E1E93481000FCDFB1 /* UUID+Helper.swift in Sources */,
 				BA1802291E9C8A7900096445 /* CreateNewDatabaseWorker.swift in Sources */,
 				BA87572E1E934E1600FCDFB1 /* ApplicationManager.swift in Sources */,
+				BAAE23E41E9DFFD80071C794 /* NSView+Xib.swift in Sources */,
+				BAAE23D91E9DEC390071C794 /* BaseCollectionViewDataSourceProtocol.swift in Sources */,
 				BADDF7311E94F35500F35FF3 /* ConnectionListViewModel.swift in Sources */,
 				BA18022D1E9C8FF200096445 /* BaseWindowController.swift in Sources */,
 				BA1802211E9C83E600096445 /* AppPreferences.swift in Sources */,
+				BAAE23CC1E9DDC780071C794 /* NSView+BackgroundColor.swift in Sources */,
 				BADDF7451E94FAFA00F35FF3 /* ReduxStore.swift in Sources */,
+				BAAE23D41E9DEA850071C794 /* BaseCollectionViewDataSource.swift in Sources */,
 				BA8757041E93474400FCDFB1 /* Constants.swift in Sources */,
 				BA8757361E934FC100FCDFB1 /* FontManager.swift in Sources */,
 				BA8757281E934AF700FCDFB1 /* RealmKeys.swift in Sources */,
+				BAAE23EB1E9E00620071C794 /* NSTableView+Register.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +794,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = TitanCore/Info.plist;
@@ -743,6 +823,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = TitanCore/Info.plist;

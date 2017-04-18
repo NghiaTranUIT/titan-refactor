@@ -12,7 +12,7 @@ open class BaseTableViewDataSource: NSObject {
 
     //
     // MARK: - Variable
-    public weak var delegate: CommonDataSourceProtocol?
+    public weak var delegate: BaseTableViewDataSourceProtocol?
     fileprivate var tableView: NSTableView!
     
     //
